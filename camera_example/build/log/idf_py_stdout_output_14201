@@ -1,0 +1,354 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/viciac/esp/esp-idf/examples/camera_example/build/bootloader/esp-idf/esptool_py && /home/viciac/esp/idf-tools/python_env/idf5.4_py3.10_env/bin/python /home/viciac/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x10000 bootloader 0x1000 /home/viciac/esp/esp-idf/examples/camera_example/build/bootloader/bootloader.bin
+Bootloader binary size 0x6c00 bytes. 0x8400 bytes (55%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/take_picture.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/take_picture.c.obj 
+/home/viciac/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.4-dev-3602-ga97a7b0962-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/viciac/esp/esp-idf/examples/camera_example/build/config -I/home/viciac/esp/esp-idf/examples/camera_example/main -I/home/viciac/esp/esp-idf/components/newlib/platform_include -I/home/viciac/esp/esp-idf/components/freertos/config/include -I/home/viciac/esp/esp-idf/components/freertos/config/include/freertos -I/home/viciac/esp/esp-idf/components/freertos/config/xtensa/include -I/home/viciac/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/viciac/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/viciac/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/viciac/esp/esp-idf/components/freertos/esp_additions/include -I/home/viciac/esp/esp-idf/components/esp_hw_support/include -I/home/viciac/esp/esp-idf/components/esp_hw_support/include/soc -I/home/viciac/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/viciac/esp/esp-idf/components/esp_hw_support/dma/include -I/home/viciac/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/viciac/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/viciac/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/viciac/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/home/viciac/esp/esp-idf/components/heap/include -I/home/viciac/esp/esp-idf/components/heap/tlsf -I/home/viciac/esp/esp-idf/components/log/include -I/home/viciac/esp/esp-idf/components/soc/include -I/home/viciac/esp/esp-idf/components/soc/esp32 -I/home/viciac/esp/esp-idf/components/soc/esp32/include -I/home/viciac/esp/esp-idf/components/soc/esp32/register -I/home/viciac/esp/esp-idf/components/hal/platform_port/include -I/home/viciac/esp/esp-idf/components/hal/esp32/include -I/home/viciac/esp/esp-idf/components/hal/include -I/home/viciac/esp/esp-idf/components/esp_rom/include -I/home/viciac/esp/esp-idf/components/esp_rom/esp32/include -I/home/viciac/esp/esp-idf/components/esp_rom/esp32/include/esp32 -I/home/viciac/esp/esp-idf/components/esp_rom/esp32 -I/home/viciac/esp/esp-idf/components/esp_common/include -I/home/viciac/esp/esp-idf/components/esp_system/include -I/home/viciac/esp/esp-idf/components/esp_system/port/soc -I/home/viciac/esp/esp-idf/components/esp_system/port/include/private -I/home/viciac/esp/esp-idf/components/xtensa/esp32/include -I/home/viciac/esp/esp-idf/components/xtensa/include -I/home/viciac/esp/esp-idf/components/xtensa/deprecated_include -I/home/viciac/esp/esp-idf/components/nvs_flash/include -I/home/viciac/esp/esp-idf/components/esp_partition/include -I/home/viciac/esp/esp-idf/components/esp32-camera/driver/include -I/home/viciac/esp/esp-idf/components/esp32-camera/conversions/include -I/home/viciac/esp/esp-idf/components/driver/deprecated -I/home/viciac/esp/esp-idf/components/driver/i2c/include -I/home/viciac/esp/esp-idf/components/driver/touch_sensor/include -I/home/viciac/esp/esp-idf/components/driver/twai/include -I/home/viciac/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/viciac/esp/esp-idf/components/esp_pm/include -I/home/viciac/esp/esp-idf/components/esp_ringbuf/include -I/home/viciac/esp/esp-idf/components/esp_driver_gpio/include -I/home/viciac/esp/esp-idf/components/esp_driver_pcnt/include -I/home/viciac/esp/esp-idf/components/esp_driver_gptimer/include -I/home/viciac/esp/esp-idf/components/esp_driver_spi/include -I/home/viciac/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/viciac/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/viciac/esp/esp-idf/components/esp_driver_i2s/include -I/home/viciac/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/viciac/esp/esp-idf/components/sdmmc/include -I/home/viciac/esp/esp-idf/components/esp_driver_sdspi/include -I/home/viciac/esp/esp-idf/components/esp_driver_sdio/include -I/home/viciac/esp/esp-idf/components/esp_driver_dac/include -I/home/viciac/esp/esp-idf/components/esp_driver_rmt/include -I/home/viciac/esp/esp-idf/components/esp_driver_tsens/include -I/home/viciac/esp/esp-idf/components/esp_driver_sdm/include -I/home/viciac/esp/esp-idf/components/esp_driver_i2c/include -I/home/viciac/esp/esp-idf/components/esp_driver_uart/include -I/home/viciac/esp/esp-idf/components/esp_driver_ledc/include -I/home/viciac/esp/esp-idf/components/esp_driver_parlio/include -I/home/viciac/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/viciac/esp/esp-idf/examples/camera_example=. -fmacro-prefix-map=/home/viciac/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/take_picture.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/take_picture.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/take_picture.c.obj -c /home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:57:1: error: unknown type name 'camera_config_t'
+   57 | camera_config_t config = {
+      | ^~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:58:5: error: field name not in record or union initializer
+   58 |     .pin_pwdn = CAM_PIN_PWDN,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:58:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:59:5: error: field name not in record or union initializer
+   59 |     .pin_reset = CAM_PIN_RESET,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:59:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:38:23: warning: excess elements in scalar initializer
+   38 | #define CAM_PIN_RESET -1
+      |                       ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:59:18: note: in expansion of macro 'CAM_PIN_RESET'
+   59 |     .pin_reset = CAM_PIN_RESET,
+      |                  ^~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:38:23: note: (near initialization for 'config')
+   38 | #define CAM_PIN_RESET -1
+      |                       ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:59:18: note: in expansion of macro 'CAM_PIN_RESET'
+   59 |     .pin_reset = CAM_PIN_RESET,
+      |                  ^~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:60:5: error: field name not in record or union initializer
+   60 |     .pin_xclk = CAM_PIN_XCLK,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:60:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:39:22: warning: excess elements in scalar initializer
+   39 | #define CAM_PIN_XCLK 0
+      |                      ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:60:17: note: in expansion of macro 'CAM_PIN_XCLK'
+   60 |     .pin_xclk = CAM_PIN_XCLK,
+      |                 ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:39:22: note: (near initialization for 'config')
+   39 | #define CAM_PIN_XCLK 0
+      |                      ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:60:17: note: in expansion of macro 'CAM_PIN_XCLK'
+   60 |     .pin_xclk = CAM_PIN_XCLK,
+      |                 ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:61:5: error: field name not in record or union initializer
+   61 |     .pin_sccb_sda = CAM_PIN_SIOD,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:61:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:40:22: warning: excess elements in scalar initializer
+   40 | #define CAM_PIN_SIOD 26
+      |                      ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:61:21: note: in expansion of macro 'CAM_PIN_SIOD'
+   61 |     .pin_sccb_sda = CAM_PIN_SIOD,
+      |                     ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:40:22: note: (near initialization for 'config')
+   40 | #define CAM_PIN_SIOD 26
+      |                      ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:61:21: note: in expansion of macro 'CAM_PIN_SIOD'
+   61 |     .pin_sccb_sda = CAM_PIN_SIOD,
+      |                     ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:62:5: error: field name not in record or union initializer
+   62 |     .pin_sccb_scl = CAM_PIN_SIOC,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:62:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:41:22: warning: excess elements in scalar initializer
+   41 | #define CAM_PIN_SIOC 27
+      |                      ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:62:21: note: in expansion of macro 'CAM_PIN_SIOC'
+   62 |     .pin_sccb_scl = CAM_PIN_SIOC,
+      |                     ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:41:22: note: (near initialization for 'config')
+   41 | #define CAM_PIN_SIOC 27
+      |                      ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:62:21: note: in expansion of macro 'CAM_PIN_SIOC'
+   62 |     .pin_sccb_scl = CAM_PIN_SIOC,
+      |                     ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:63:5: error: field name not in record or union initializer
+   63 |     .pin_d7 = CAM_PIN_D7,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:63:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:42:20: warning: excess elements in scalar initializer
+   42 | #define CAM_PIN_D7 35
+      |                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:63:15: note: in expansion of macro 'CAM_PIN_D7'
+   63 |     .pin_d7 = CAM_PIN_D7,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:42:20: note: (near initialization for 'config')
+   42 | #define CAM_PIN_D7 35
+      |                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:63:15: note: in expansion of macro 'CAM_PIN_D7'
+   63 |     .pin_d7 = CAM_PIN_D7,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:64:5: error: field name not in record or union initializer
+   64 |     .pin_d6 = CAM_PIN_D6,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:64:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:43:20: warning: excess elements in scalar initializer
+   43 | #define CAM_PIN_D6 34
+      |                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:64:15: note: in expansion of macro 'CAM_PIN_D6'
+   64 |     .pin_d6 = CAM_PIN_D6,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:43:20: note: (near initialization for 'config')
+   43 | #define CAM_PIN_D6 34
+      |                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:64:15: note: in expansion of macro 'CAM_PIN_D6'
+   64 |     .pin_d6 = CAM_PIN_D6,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:65:5: error: field name not in record or union initializer
+   65 |     .pin_d5 = CAM_PIN_D5,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:65:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:44:20: warning: excess elements in scalar initializer
+   44 | #define CAM_PIN_D5 39
+      |                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:65:15: note: in expansion of macro 'CAM_PIN_D5'
+   65 |     .pin_d5 = CAM_PIN_D5,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:44:20: note: (near initialization for 'config')
+   44 | #define CAM_PIN_D5 39
+      |                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:65:15: note: in expansion of macro 'CAM_PIN_D5'
+   65 |     .pin_d5 = CAM_PIN_D5,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:66:5: error: field name not in record or union initializer
+   66 |     .pin_d4 = CAM_PIN_D4,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:66:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:45:20: warning: excess elements in scalar initializer
+   45 | #define CAM_PIN_D4 36
+      |                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:66:15: note: in expansion of macro 'CAM_PIN_D4'
+   66 |     .pin_d4 = CAM_PIN_D4,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:45:20: note: (near initialization for 'config')
+   45 | #define CAM_PIN_D4 36
+      |                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:66:15: note: in expansion of macro 'CAM_PIN_D4'
+   66 |     .pin_d4 = CAM_PIN_D4,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:67:5: error: field name not in record or union initializer
+   67 |     .pin_d3 = CAM_PIN_D3,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:67:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:46:20: warning: excess elements in scalar initializer
+   46 | #define CAM_PIN_D3 21
+      |                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:67:15: note: in expansion of macro 'CAM_PIN_D3'
+   67 |     .pin_d3 = CAM_PIN_D3,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:46:20: note: (near initialization for 'config')
+   46 | #define CAM_PIN_D3 21
+      |                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:67:15: note: in expansion of macro 'CAM_PIN_D3'
+   67 |     .pin_d3 = CAM_PIN_D3,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:68:5: error: field name not in record or union initializer
+   68 |     .pin_d2 = CAM_PIN_D2,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:68:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:47:20: warning: excess elements in scalar initializer
+   47 | #define CAM_PIN_D2 19
+      |                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:68:15: note: in expansion of macro 'CAM_PIN_D2'
+   68 |     .pin_d2 = CAM_PIN_D2,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:47:20: note: (near initialization for 'config')
+   47 | #define CAM_PIN_D2 19
+      |                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:68:15: note: in expansion of macro 'CAM_PIN_D2'
+   68 |     .pin_d2 = CAM_PIN_D2,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:69:5: error: field name not in record or union initializer
+   69 |     .pin_d1 = CAM_PIN_D1,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:69:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:48:20: warning: excess elements in scalar initializer
+   48 | #define CAM_PIN_D1 18
+      |                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:69:15: note: in expansion of macro 'CAM_PIN_D1'
+   69 |     .pin_d1 = CAM_PIN_D1,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:48:20: note: (near initialization for 'config')
+   48 | #define CAM_PIN_D1 18
+      |                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:69:15: note: in expansion of macro 'CAM_PIN_D1'
+   69 |     .pin_d1 = CAM_PIN_D1,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:70:5: error: field name not in record or union initializer
+   70 |     .pin_d0 = CAM_PIN_D0,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:70:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:49:20: warning: excess elements in scalar initializer
+   49 | #define CAM_PIN_D0 5
+      |                    ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:70:15: note: in expansion of macro 'CAM_PIN_D0'
+   70 |     .pin_d0 = CAM_PIN_D0,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:49:20: note: (near initialization for 'config')
+   49 | #define CAM_PIN_D0 5
+      |                    ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:70:15: note: in expansion of macro 'CAM_PIN_D0'
+   70 |     .pin_d0 = CAM_PIN_D0,
+      |               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:71:5: error: field name not in record or union initializer
+   71 |     .pin_vsync = CAM_PIN_VSYNC,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:71:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:50:23: warning: excess elements in scalar initializer
+   50 | #define CAM_PIN_VSYNC 25
+      |                       ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:71:18: note: in expansion of macro 'CAM_PIN_VSYNC'
+   71 |     .pin_vsync = CAM_PIN_VSYNC,
+      |                  ^~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:50:23: note: (near initialization for 'config')
+   50 | #define CAM_PIN_VSYNC 25
+      |                       ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:71:18: note: in expansion of macro 'CAM_PIN_VSYNC'
+   71 |     .pin_vsync = CAM_PIN_VSYNC,
+      |                  ^~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:72:5: error: field name not in record or union initializer
+   72 |     .pin_href = CAM_PIN_HREF,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:72:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:51:22: warning: excess elements in scalar initializer
+   51 | #define CAM_PIN_HREF 23
+      |                      ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:72:17: note: in expansion of macro 'CAM_PIN_HREF'
+   72 |     .pin_href = CAM_PIN_HREF,
+      |                 ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:51:22: note: (near initialization for 'config')
+   51 | #define CAM_PIN_HREF 23
+      |                      ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:72:17: note: in expansion of macro 'CAM_PIN_HREF'
+   72 |     .pin_href = CAM_PIN_HREF,
+      |                 ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:73:5: error: field name not in record or union initializer
+   73 |     .pin_pclk = CAM_PIN_PCLK,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:73:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:52:22: warning: excess elements in scalar initializer
+   52 | #define CAM_PIN_PCLK 22
+      |                      ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:73:17: note: in expansion of macro 'CAM_PIN_PCLK'
+   73 |     .pin_pclk = CAM_PIN_PCLK,
+      |                 ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:52:22: note: (near initialization for 'config')
+   52 | #define CAM_PIN_PCLK 22
+      |                      ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:73:17: note: in expansion of macro 'CAM_PIN_PCLK'
+   73 |     .pin_pclk = CAM_PIN_PCLK,
+      |                 ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:74:5: error: field name not in record or union initializer
+   74 |     .xclk_freq_hz = 20000000,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:74:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:74:21: warning: excess elements in scalar initializer
+   74 |     .xclk_freq_hz = 20000000,
+      |                     ^~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:74:21: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:75:5: error: field name not in record or union initializer
+   75 |     .ledc_timer = LEDC_TIMER_0,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:75:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:75:19: error: 'LEDC_TIMER_0' undeclared here (not in a function)
+   75 |     .ledc_timer = LEDC_TIMER_0,
+      |                   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:75:19: warning: excess elements in scalar initializer
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:75:19: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:76:5: error: field name not in record or union initializer
+   76 |     .ledc_channel = LEDC_CHANNEL_0,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:76:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:76:21: error: 'LEDC_CHANNEL_0' undeclared here (not in a function)
+   76 |     .ledc_channel = LEDC_CHANNEL_0,
+      |                     ^~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:76:21: warning: excess elements in scalar initializer
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:76:21: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:77:5: error: field name not in record or union initializer
+   77 |     .pixel_format = PIXFORMAT_GRAYSCALE,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:77:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:77:21: error: 'PIXFORMAT_GRAYSCALE' undeclared here (not in a function)
+   77 |     .pixel_format = PIXFORMAT_GRAYSCALE,
+      |                     ^~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:77:21: warning: excess elements in scalar initializer
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:77:21: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:78:5: error: field name not in record or union initializer
+   78 |     .frame_size = FRAMESIZE_96X96,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:78:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:78:19: error: 'FRAMESIZE_96X96' undeclared here (not in a function)
+   78 |     .frame_size = FRAMESIZE_96X96,
+      |                   ^~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:78:19: warning: excess elements in scalar initializer
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:78:19: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:79:5: error: field name not in record or union initializer
+   79 |     .jpeg_quality = 12,
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:79:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:79:21: warning: excess elements in scalar initializer
+   79 |     .jpeg_quality = 12,
+      |                     ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:79:21: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:80:5: error: field name not in record or union initializer
+   80 |     .fb_count = 1
+      |     ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:80:5: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:80:17: warning: excess elements in scalar initializer
+   80 |     .fb_count = 1
+      |                 ^
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:80:17: note: (near initialization for 'config')
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c: In function 'blink_led':
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:85:9: error: implicit declaration of function 'gpio_set_level' [-Wimplicit-function-declaration]
+   85 |         gpio_set_level(LED_FLASH, 1);
+      |         ^~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:86:9: error: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+   86 |         vTaskDelay(1000 / portTICK_PERIOD_MS);
+      |         ^~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:86:27: error: 'portTICK_PERIOD_MS' undeclared (first use in this function)
+   86 |         vTaskDelay(1000 / portTICK_PERIOD_MS);
+      |                           ^~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:86:27: note: each undeclared identifier is reported only once for each function it appears in
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c: In function 'app_main':
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:94:9: error: implicit declaration of function 'esp_camera_init' [-Wimplicit-function-declaration]
+   94 |     if (esp_camera_init(&config) != ESP_OK) {
+      |         ^~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:94:37: error: 'ESP_OK' undeclared (first use in this function)
+   94 |     if (esp_camera_init(&config) != ESP_OK) {
+      |                                     ^~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:95:9: error: 'Serial' undeclared (first use in this function)
+   95 |         Serial.println("Error al inicializar la cámara");
+      |         ^~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:104:23: error: 'portTICK_PERIOD_MS' undeclared (first use in this function)
+  104 |     vTaskDelay(3000 / portTICK_PERIOD_MS);
+      |                       ^~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:107:5: error: unknown type name 'camera_fb_t'
+  107 |     camera_fb_t *pic = esp_camera_fb_get();
+      |     ^~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:107:24: error: implicit declaration of function 'esp_camera_fb_get' [-Wimplicit-function-declaration]
+  107 |     camera_fb_t *pic = esp_camera_fb_get();
+      |                        ^~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:107:24: error: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:111:18: error: implicit declaration of function 'classify_image' [-Wimplicit-function-declaration]
+  111 |     int result = classify_image(pic->buf);  // Implementar `classify_image` para usar el modelo
+      |                  ^~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:111:36: error: request for member 'buf' in something not a structure or union
+  111 |     int result = classify_image(pic->buf);  // Implementar `classify_image` para usar el modelo
+      |                                    ^~
+/home/viciac/esp/esp-idf/examples/camera_example/main/take_picture.c:117:5: error: implicit declaration of function 'esp_camera_fb_return' [-Wimplicit-function-declaration]
+  117 |     esp_camera_fb_return(pic);
+      |     ^~~~~~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.

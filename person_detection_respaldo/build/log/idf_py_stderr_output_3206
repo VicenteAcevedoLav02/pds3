@@ -1,0 +1,6 @@
+[0;33m--- esp-idf-monitor 1.5.0 on COM4 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Connection to COM4 failed. Available ports:
+/dev/ttyS1
+/dev/ttyS0[0m
+[0m

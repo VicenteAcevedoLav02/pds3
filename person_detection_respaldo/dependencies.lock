@@ -1,0 +1,38 @@
+dependencies:
+  espressif/esp-nn:
+    component_hash: f6f2851ce82137a66e4265071c9b852bbe0130b882a18dea9f03faea7bf1295a
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.2'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.1.0
+  espressif/esp-tflite-micro:
+    dependencies:
+    - name: idf
+      version: '>=4.4'
+    - name: espressif/esp-nn
+      version: ^1.1.0
+    source:
+      path: /home/viciac/esp/esp-idf/esp-tflite-micro
+      type: local
+    version: '*'
+  espressif/esp32-camera:
+    component_hash: a82de4ee0b383bd34695935385c6a6c720129084580c2bbb55dce76eb2a3788f
+    dependencies: []
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 2.0.13
+  idf:
+    source:
+      type: idf
+    version: 5.4.0
+direct_dependencies:
+- espressif/esp-tflite-micro
+- espressif/esp32-camera
+manifest_hash: 350a278c6cc1589f5e5dc54c9fcd71c1563dddf56f29478d38f2604fe7bf3744
+target: esp32
+version: 2.0.0

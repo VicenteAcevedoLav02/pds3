@@ -1,0 +1,1905 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader/esp-idf/esptool_py && /home/viciac/esp/idf-tools/python_env/idf5.4_py3.10_env/bin/python /home/viciac/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader/bootloader.bin
+Bootloader binary size 0x6c00 bytes. 0x400 bytes (4%) free.
+[2/7] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj 
+/home/viciac/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32-elf-g++ -DESP_PLATFORM -DIDF_VER=\"v5.4-dev-3602-ga97a7b0962-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/config -I/home/viciac/esp/esp-idf/components/newlib/platform_include -I/home/viciac/esp/esp-idf/components/freertos/config/include -I/home/viciac/esp/esp-idf/components/freertos/config/include/freertos -I/home/viciac/esp/esp-idf/components/freertos/config/xtensa/include -I/home/viciac/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/viciac/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/viciac/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/viciac/esp/esp-idf/components/freertos/esp_additions/include -I/home/viciac/esp/esp-idf/components/esp_hw_support/include -I/home/viciac/esp/esp-idf/components/esp_hw_support/include/soc -I/home/viciac/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/viciac/esp/esp-idf/components/esp_hw_support/dma/include -I/home/viciac/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/viciac/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/viciac/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/viciac/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/home/viciac/esp/esp-idf/components/heap/include -I/home/viciac/esp/esp-idf/components/heap/tlsf -I/home/viciac/esp/esp-idf/components/log/include -I/home/viciac/esp/esp-idf/components/soc/include -I/home/viciac/esp/esp-idf/components/soc/esp32 -I/home/viciac/esp/esp-idf/components/soc/esp32/include -I/home/viciac/esp/esp-idf/components/soc/esp32/register -I/home/viciac/esp/esp-idf/components/hal/platform_port/include -I/home/viciac/esp/esp-idf/components/hal/esp32/include -I/home/viciac/esp/esp-idf/components/hal/include -I/home/viciac/esp/esp-idf/components/esp_rom/include -I/home/viciac/esp/esp-idf/components/esp_rom/esp32/include -I/home/viciac/esp/esp-idf/components/esp_rom/esp32/include/esp32 -I/home/viciac/esp/esp-idf/components/esp_rom/esp32 -I/home/viciac/esp/esp-idf/components/esp_common/include -I/home/viciac/esp/esp-idf/components/esp_system/include -I/home/viciac/esp/esp-idf/components/esp_system/port/soc -I/home/viciac/esp/esp-idf/components/esp_system/port/include/private -I/home/viciac/esp/esp-idf/components/xtensa/esp32/include -I/home/viciac/esp/esp-idf/components/xtensa/include -I/home/viciac/esp/esp-idf/components/xtensa/deprecated_include -I/home/viciac/esp/esp-idf/components/esp_timer/include -I/home/viciac/esp/esp-idf/components/lwip/include -I/home/viciac/esp/esp-idf/components/lwip/include/apps -I/home/viciac/esp/esp-idf/components/lwip/include/apps/sntp -I/home/viciac/esp/esp-idf/components/lwip/lwip/src/include -I/home/viciac/esp/esp-idf/components/lwip/port/include -I/home/viciac/esp/esp-idf/components/lwip/port/freertos/include -I/home/viciac/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/viciac/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/viciac/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/viciac/esp/esp-idf/components/console -I/home/viciac/esp/esp-idf/components/vfs/include -I/home/viciac/esp/esp-idf/components/esp_vfs_console/include -I/home/viciac/esp/esp-idf/components/spi_flash/include -I/home/viciac/esp/esp-idf/esp-tflite-micro -I/home/viciac/esp/esp-idf/esp-tflite-micro/third_party/gemmlowp -I/home/viciac/esp/esp-idf/esp-tflite-micro/third_party/flatbuffers/include -I/home/viciac/esp/esp-idf/esp-tflite-micro/third_party/ruy -I/home/viciac/esp/esp-idf/esp-tflite-micro/third_party/kissfft -I/home/viciac/esp/esp-idf/esp-tflite-micro/signal/micro/kernels -I/home/viciac/esp/esp-idf/esp-tflite-micro/signal/src -I/home/viciac/esp/esp-idf/esp-tflite-micro/signal/src/kiss_fft_wrappers -I/home/viciac/esp/esp-idf/components/esp32-camera/driver/include -I/home/viciac/esp/esp-idf/components/esp32-camera/conversions/include -I/home/viciac/esp/esp-idf/components/driver/deprecated -I/home/viciac/esp/esp-idf/components/driver/i2c/include -I/home/viciac/esp/esp-idf/components/driver/touch_sensor/include -I/home/viciac/esp/esp-idf/components/driver/twai/include -I/home/viciac/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/viciac/esp/esp-idf/components/esp_pm/include -I/home/viciac/esp/esp-idf/components/esp_ringbuf/include -I/home/viciac/esp/esp-idf/components/esp_driver_gpio/include -I/home/viciac/esp/esp-idf/components/esp_driver_pcnt/include -I/home/viciac/esp/esp-idf/components/esp_driver_gptimer/include -I/home/viciac/esp/esp-idf/components/esp_driver_spi/include -I/home/viciac/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/viciac/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/viciac/esp/esp-idf/components/esp_driver_i2s/include -I/home/viciac/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/viciac/esp/esp-idf/components/sdmmc/include -I/home/viciac/esp/esp-idf/components/esp_driver_sdspi/include -I/home/viciac/esp/esp-idf/components/esp_driver_sdio/include -I/home/viciac/esp/esp-idf/components/esp_driver_dac/include -I/home/viciac/esp/esp-idf/components/esp_driver_rmt/include -I/home/viciac/esp/esp-idf/components/esp_driver_tsens/include -I/home/viciac/esp/esp-idf/components/esp_driver_sdm/include -I/home/viciac/esp/esp-idf/components/esp_driver_i2c/include -I/home/viciac/esp/esp-idf/components/esp_driver_uart/include -I/home/viciac/esp/esp-idf/components/esp_driver_ledc/include -I/home/viciac/esp/esp-idf/components/esp_driver_parlio/include -I/home/viciac/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -mfix-esp32-psram-cache-issue -mfix-esp32-psram-cache-strategy=memw -O2 -fmacro-prefix-map=/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo=. -fmacro-prefix-map=/home/viciac/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu++2b -fno-exceptions -fno-rtti -DTF_LITE_STATIC_MEMORY -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj -c /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc
+In file included from /home/viciac/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:63,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:34:
+/home/viciac/esp/esp-idf/components/freertos/config/include/freertos/FreeRTOSConfig.h:92:9: warning: "configTICK_RATE_HZ" redefined
+   92 | #define configTICK_RATE_HZ                           CONFIG_FREERTOS_HZ
+      |         ^~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:23:9: note: this is the location of the previous definition
+   23 | #define configTICK_RATE_HZ 1000
+      |         ^~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:21:32: error: expected unqualified-id before numeric constant
+   21 | static uint8_t s_led_state = 0;4
+      |                                ^
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/c/common.h:31,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/detection_responder.h:22,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:25:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:100:17: error: expected identifier before '*' token
+  100 |   TfLiteStatus (*Refresh)(struct TfLiteContext* context);
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:100:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+  100 |   TfLiteStatus (*Refresh)(struct TfLiteContext* context);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:100:56: error: 'TfLiteStatus' declared as function returning a function
+  100 |   TfLiteStatus (*Refresh)(struct TfLiteContext* context);
+      |                                                        ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:320:31: error: 'TfLiteType' was not declared in this scope
+  320 | const char* TfLiteTypeGetName(TfLiteType type);
+      |                               ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:627:3: error: 'TfLiteQuantizationParams' does not name a type; did you mean 'TfLiteQuantizationType'?
+  627 |   TfLiteQuantizationParams params;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+      |   TfLiteQuantizationType
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:646:3: error: 'TfLiteType' does not name a type
+  646 |   TfLiteType type;
+      |   ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:707:3: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+  707 |   TfLiteType type;
+      |   ^~~~~~~~~~
+      |   TfLiteNode
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:784:3: error: 'TfLiteOpaqueDelegate' does not name a type; did you mean 'TfLiteOpaqueDelegateParams'?
+  784 |   TfLiteOpaqueDelegate* delegate;
+      |   ^~~~~~~~~~~~~~~~~~~~
+      |   TfLiteOpaqueDelegateParams
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:852:17: error: expected identifier before '*' token
+  852 |   TfLiteStatus (*GetExecutionPlan)(struct TfLiteContext* context,
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:852:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+  852 |   TfLiteStatus (*GetExecutionPlan)(struct TfLiteContext* context,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:853:67: error: 'TfLiteStatus' declared as function returning a function
+  853 |                                    TfLiteIntArray** execution_plan);
+      |                                                                   ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:863:17: error: expected identifier before '*' token
+  863 |   TfLiteStatus (*ResizeTensor)(struct TfLiteContext*, TfLiteTensor* tensor,
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:863:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+  863 |   TfLiteStatus (*ResizeTensor)(struct TfLiteContext*, TfLiteTensor* tensor,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:864:56: error: 'TfLiteStatus' declared as function returning a function
+  864 |                                TfLiteIntArray* new_size);
+      |                                                        ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:871:17: error: expected identifier before '*' token
+  871 |   TfLiteStatus (*AddTensors)(struct TfLiteContext*, int tensors_to_add,
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:871:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+  871 |   TfLiteStatus (*AddTensors)(struct TfLiteContext*, int tensors_to_add,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:872:57: error: 'TfLiteStatus' declared as function returning a function
+  872 |                              int* first_new_tensor_index);
+      |                                                         ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:877:17: error: expected identifier before '*' token
+  877 |   TfLiteStatus (*GetNodeAndRegistration)(
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:877:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+  877 |   TfLiteStatus (*GetNodeAndRegistration)(
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:879:47: error: 'TfLiteStatus' declared as function returning a function
+  879 |       struct TfLiteRegistration** registration);
+      |                                               ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:883:17: error: expected identifier before '*' token
+  883 |   TfLiteStatus (*ReplaceNodeSubsetsWithDelegateKernels)(
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:883:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+  883 |   TfLiteStatus (*ReplaceNodeSubsetsWithDelegateKernels)(
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:885:78: error: 'TfLiteStatus' declared as function returning a function
+  885 |       const TfLiteIntArray* nodes_to_replace, struct TfLiteDelegate* delegate);
+      |                                                                              ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:929:17: error: expected identifier before '*' token
+  929 |   TfLiteStatus (*AllocateBufferForEval)(struct TfLiteContext* ctx, size_t bytes,
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:929:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+  929 |   TfLiteStatus (*AllocateBufferForEval)(struct TfLiteContext* ctx, size_t bytes,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:930:51: error: 'TfLiteStatus' declared as function returning a function
+  930 |                                         void** ptr);
+      |                                                   ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:938:17: error: expected identifier before '*' token
+  938 |   TfLiteStatus (*RequestScratchBufferInArena)(struct TfLiteContext* ctx,
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:938:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+  938 |   TfLiteStatus (*RequestScratchBufferInArena)(struct TfLiteContext* ctx,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:939:76: error: 'TfLiteStatus' declared as function returning a function
+  939 |                                               size_t bytes, int* buffer_idx);
+      |                                                                            ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:952:17: error: expected identifier before '*' token
+  952 |   TfLiteStatus (*ResizeTensorExplicit)(struct TfLiteContext* ctx,
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:952:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+  952 |   TfLiteStatus (*ResizeTensorExplicit)(struct TfLiteContext* ctx,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:954:56: error: 'TfLiteStatus' declared as function returning a function
+  954 |                                        const int* shape);
+      |                                                        ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:976:17: error: expected identifier before '*' token
+  976 |   TfLiteStatus (*PreviewDelegatePartitioning)(
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:976:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+  976 |   TfLiteStatus (*PreviewDelegatePartitioning)(
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:978:73: error: 'TfLiteStatus' declared as function returning a function
+  978 |       TfLiteDelegateParams** partition_params_array, int* num_partitions);
+      |                                                                         ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1004:17: error: expected identifier before '*' token
+ 1004 |   TfLiteStatus (*GetModelMetadata)(const struct TfLiteContext* context,
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1004:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1004 |   TfLiteStatus (*GetModelMetadata)(const struct TfLiteContext* context,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1006:49: error: 'TfLiteStatus' declared as function returning a function
+ 1006 |                                    size_t* bytes);
+      |                                                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1017:17: error: expected identifier before '*' token
+ 1017 |   TfLiteStatus (*AcquireSubgraphContext)(
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1017:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1017 |   TfLiteStatus (*AcquireSubgraphContext)(
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1019:46: error: 'TfLiteStatus' declared as function returning a function
+ 1019 |       struct TfLiteContext** acquired_context);
+      |                                              ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1028:17: error: expected identifier before '*' token
+ 1028 |   TfLiteStatus (*ReleaseSubgraphContext)(struct TfLiteContext* context,
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1028:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1028 |   TfLiteStatus (*ReleaseSubgraphContext)(struct TfLiteContext* context,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1029:60: error: 'TfLiteStatus' declared as function returning a function
+ 1029 |                                          int subgraph_index);
+      |                                                            ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1143:17: error: expected identifier before '*' token
+ 1143 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1143:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1143 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1143:67: error: 'TfLiteStatus' declared as function returning a function
+ 1143 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |                                                                   ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1149:17: error: expected identifier before '*' token
+ 1149 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1149:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1149 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1149:66: error: 'TfLiteStatus' declared as function returning a function
+ 1149 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |                                                                  ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1218:17: error: expected identifier before '*' token
+ 1218 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1218:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1218 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1218:67: error: 'TfLiteStatus' declared as function returning a function
+ 1218 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |                                                                   ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1219:17: error: expected identifier before '*' token
+ 1219 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1219:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1219 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1219:66: error: 'TfLiteStatus' declared as function returning a function
+ 1219 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |                                                                  ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1244:17: error: expected identifier before '*' token
+ 1244 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1244:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1244 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1244:67: error: 'TfLiteStatus' declared as function returning a function
+ 1244 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |                                                                   ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1245:17: error: expected identifier before '*' token
+ 1245 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1245:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1245 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1245:66: error: 'TfLiteStatus' declared as function returning a function
+ 1245 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |                                                                  ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1268:17: error: expected identifier before '*' token
+ 1268 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1268:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1268 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1268:67: error: 'TfLiteStatus' declared as function returning a function
+ 1268 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |                                                                   ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1269:17: error: expected identifier before '*' token
+ 1269 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1269:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1269 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1269:66: error: 'TfLiteStatus' declared as function returning a function
+ 1269 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |                                                                  ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1333:17: error: expected identifier before '*' token
+ 1333 |   TfLiteStatus (*Prepare)(TfLiteContext* context,
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1333:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1333 |   TfLiteStatus (*Prepare)(TfLiteContext* context,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1334:58: error: 'TfLiteStatus' declared as function returning a function
+ 1334 |                           struct TfLiteDelegate* delegate);
+      |                                                          ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1340:17: error: expected identifier before '*' token
+ 1340 |   TfLiteStatus (*CopyFromBufferHandle)(TfLiteContext* context,
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1340:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1340 |   TfLiteStatus (*CopyFromBufferHandle)(TfLiteContext* context,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1343:60: error: 'TfLiteStatus' declared as function returning a function
+ 1343 |                                        TfLiteTensor* tensor);
+      |                                                            ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1347:17: error: expected identifier before '*' token
+ 1347 |   TfLiteStatus (*CopyToBufferHandle)(TfLiteContext* context,
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1347:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1347 |   TfLiteStatus (*CopyToBufferHandle)(TfLiteContext* context,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1350:58: error: 'TfLiteStatus' declared as function returning a function
+ 1350 |                                      TfLiteTensor* tensor);
+      |                                                          ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1403:17: error: expected identifier before '*' token
+ 1403 |   TfLiteStatus (*Prepare)(TfLiteOpaqueContext* context,  // NOLINT
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1403:27: error: 'TfLiteOpaqueContext' has not been declared
+ 1403 |   TfLiteStatus (*Prepare)(TfLiteOpaqueContext* context,  // NOLINT
+      |                           ^~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1404:27: error: 'TfLiteOpaqueDelegate' has not been declared
+ 1404 |                           TfLiteOpaqueDelegate* delegate, void* data);
+      |                           ^~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1403:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1403 |   TfLiteStatus (*Prepare)(TfLiteOpaqueContext* context,  // NOLINT
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1404:69: error: 'TfLiteStatus' declared as function returning a function
+ 1404 |                           TfLiteOpaqueDelegate* delegate, void* data);
+      |                                                                     ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1409:17: error: expected identifier before '*' token
+ 1409 |   TfLiteStatus (*CopyFromBufferHandle)(  // NOLINT
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1410:7: error: 'TfLiteOpaqueContext' has not been declared
+ 1410 |       TfLiteOpaqueContext* context, TfLiteOpaqueDelegate* delegate, void* data,
+      |       ^~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1410:37: error: 'TfLiteOpaqueDelegate' has not been declared
+ 1410 |       TfLiteOpaqueContext* context, TfLiteOpaqueDelegate* delegate, void* data,
+      |                                     ^~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1411:41: error: 'TfLiteOpaqueTensor' has not been declared
+ 1411 |       TfLiteBufferHandle buffer_handle, TfLiteOpaqueTensor* tensor);
+      |                                         ^~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1409:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1409 |   TfLiteStatus (*CopyFromBufferHandle)(  // NOLINT
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1411:67: error: 'TfLiteStatus' declared as function returning a function
+ 1411 |       TfLiteBufferHandle buffer_handle, TfLiteOpaqueTensor* tensor);
+      |                                                                   ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1414:17: error: expected identifier before '*' token
+ 1414 |   TfLiteStatus (*CopyToBufferHandle)(  // NOLINT
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1415:7: error: 'TfLiteOpaqueContext' has not been declared
+ 1415 |       TfLiteOpaqueContext* context, TfLiteOpaqueDelegate* delegate, void* data,
+      |       ^~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1415:37: error: 'TfLiteOpaqueDelegate' has not been declared
+ 1415 |       TfLiteOpaqueContext* context, TfLiteOpaqueDelegate* delegate, void* data,
+      |                                     ^~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1416:41: error: 'TfLiteOpaqueTensor' has not been declared
+ 1416 |       TfLiteBufferHandle buffer_handle, TfLiteOpaqueTensor* tensor);
+      |                                         ^~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1414:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+ 1414 |   TfLiteStatus (*CopyToBufferHandle)(  // NOLINT
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1416:67: error: 'TfLiteStatus' declared as function returning a function
+ 1416 |       TfLiteBufferHandle buffer_handle, TfLiteOpaqueTensor* tensor);
+      |                                                                   ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1421:28: error: 'TfLiteOpaqueContext' has not been declared
+ 1421 |   void (*FreeBufferHandle)(TfLiteOpaqueContext* context,  // NOLINT
+      |                            ^~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1422:28: error: 'TfLiteOpaqueDelegate' has not been declared
+ 1422 |                            TfLiteOpaqueDelegate* delegate, void* data,
+      |                            ^~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1444:41: error: 'TfLiteOpaqueDelegate' does not name a type; did you mean 'TfLiteOpaqueDelegateParams'?
+ 1444 | void* TfLiteOpaqueDelegateGetData(const TfLiteOpaqueDelegate* delegate);
+      |                                         ^~~~~~~~~~~~~~~~~~~~
+      |                                         TfLiteOpaqueDelegateParams
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1586:1: error: 'TfLiteStatus' does not name a type
+ 1586 | TfLiteStatus TfLiteTensorVariantRealloc(TfLiteTensor* t,
+      | ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:26:
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/image_provider.h:41:1: error: 'TfLiteStatus' does not name a type
+   41 | TfLiteStatus GetImage(int image_width, int image_height, int channels, int8_t* image_data);
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/image_provider.h:43:1: error: 'TfLiteStatus' does not name a type
+   43 | TfLiteStatus InitCamera();
+      | ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/arena_allocator/single_arena_buffer_allocator.h:23,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:21,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:26,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:29:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/arena_allocator/ibuffer_allocator.h:66:11: error: 'TfLiteStatus' does not name a type
+   66 |   virtual TfLiteStatus ResetTempAllocations() = 0;
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/arena_allocator/ibuffer_allocator.h:73:11: error: 'TfLiteStatus' does not name a type
+   73 |   virtual TfLiteStatus ResizeBuffer(uint8_t* resizable_buf, size_t size,
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/arena_allocator/ibuffer_allocator.h:77:11: error: 'TfLiteStatus' does not name a type
+   77 |   virtual TfLiteStatus DeallocateResizableBuffer(uint8_t* resizable_buf) = 0;
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/arena_allocator/ibuffer_allocator.h:87:11: error: 'TfLiteStatus' does not name a type
+   87 |   virtual TfLiteStatus ReserveNonPersistentOverlayMemory(size_t size,
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/arena_allocator/single_arena_buffer_allocator.h:51:11: error: 'TfLiteStatus' does not name a type
+   51 |   virtual TfLiteStatus ResizeBuffer(uint8_t* resizable_buf, size_t size,
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/arena_allocator/single_arena_buffer_allocator.h:60:11: error: 'TfLiteStatus' does not name a type
+   60 |   virtual TfLiteStatus DeallocateResizableBuffer(
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/arena_allocator/single_arena_buffer_allocator.h:64:11: error: 'TfLiteStatus' does not name a type
+   64 |   virtual TfLiteStatus ReserveNonPersistentOverlayMemory(
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/arena_allocator/single_arena_buffer_allocator.h:93:11: error: 'TfLiteStatus' does not name a type
+   93 |   virtual TfLiteStatus ResetTempAllocations() override;
+      |           ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:24:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/memory_planner/micro_memory_planner.h:55:11: error: 'TfLiteStatus' does not name a type
+   55 |   virtual TfLiteStatus AddBuffer(int size, int first_time_used,
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/memory_planner/micro_memory_planner.h:62:11: error: 'TfLiteStatus' does not name a type
+   62 |   virtual TfLiteStatus AddBuffer(int size, int first_time_used,
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/memory_planner/micro_memory_planner.h:72:11: error: 'TfLiteStatus' does not name a type
+   72 |   virtual TfLiteStatus GetOffsetForBuffer(int buffer_index, int* offset) = 0;
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/memory_planner/micro_memory_planner.h:79:11: error: 'TfLiteStatus' does not name a type
+   79 |   virtual TfLiteStatus Init(unsigned char* scratch_buffer,
+      |           ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:25:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_common.h:26:17: error: expected identifier before '*' token
+   26 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_common.h:26:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+   26 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_common.h:26:67: error: 'TfLiteStatus' declared as function returning a function
+   26 |   TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node);
+      |                                                                   ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_common.h:27:17: error: expected identifier before '*' token
+   27 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_common.h:27:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+   27 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_common.h:27:66: error: 'TfLiteStatus' declared as function returning a function
+   27 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |                                                                  ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_common.h:34:17: error: expected identifier before '*' token
+   34 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |                 ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_common.h:34:3: error: ISO C++ forbids declaration of 'TfLiteStatus' with no type [-fpermissive]
+   34 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_common.h:34:66: error: 'TfLiteStatus' declared as function returning a function
+   34 |   TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node);
+      |                                                                  ^
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:19,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:26:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h: In member function 'T* tflite::BuiltinDataAllocator::AllocatePOD()':
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:47:24: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use 'is_standard_layout && is_trivial' instead [-Wdeprecated-declarations]
+   47 |     static_assert(std::is_pod<T>::value, "Builtin data structure must be POD.");
+      |                        ^~~~~~
+In file included from /home/viciac/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/bits/stl_pair.h:60,
+                 from /home/viciac/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/utility:69,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1476:
+/home/viciac/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/type_traits:890:5: note: declared here
+  890 |     is_pod
+      |     ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h: At global scope:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:64:1: error: 'TfLiteStatus' does not name a type
+   64 | TfLiteStatus ParseOpData(const Operator* op, BuiltinOperator op_type,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:70:1: error: 'TfLiteStatus' does not name a type
+   70 | TfLiteStatus ConvertTensorType(TensorType tensor_type, TfLiteType* type,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:73:1: error: 'TfLiteStatus' does not name a type
+   73 | TfLiteStatus ParseAbs(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:76:1: error: 'TfLiteStatus' does not name a type
+   76 | TfLiteStatus ParseAdd(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:79:1: error: 'TfLiteStatus' does not name a type
+   79 | TfLiteStatus ParseAddN(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:82:1: error: 'TfLiteStatus' does not name a type
+   82 | TfLiteStatus ParseArgMax(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:85:1: error: 'TfLiteStatus' does not name a type
+   85 | TfLiteStatus ParseArgMin(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:88:1: error: 'TfLiteStatus' does not name a type
+   88 | TfLiteStatus ParseAssignVariable(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:93:1: error: 'TfLiteStatus' does not name a type
+   93 | TfLiteStatus ParseBatchMatMul(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:97:1: error: 'TfLiteStatus' does not name a type
+   97 | TfLiteStatus ParseBatchToSpaceNd(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:102:1: error: 'TfLiteStatus' does not name a type
+  102 | TfLiteStatus ParseBroadcastArgs(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:107:1: error: 'TfLiteStatus' does not name a type
+  107 | TfLiteStatus ParseBroadcastTo(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:111:1: error: 'TfLiteStatus' does not name a type
+  111 | TfLiteStatus ParseCallOnce(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:115:1: error: 'TfLiteStatus' does not name a type
+  115 | TfLiteStatus ParseCeil(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:118:1: error: 'TfLiteStatus' does not name a type
+  118 | TfLiteStatus ParseCast(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:121:1: error: 'TfLiteStatus' does not name a type
+  121 | TfLiteStatus ParseConcatenation(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:126:1: error: 'TfLiteStatus' does not name a type
+  126 | TfLiteStatus ParseConv2D(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:129:1: error: 'TfLiteStatus' does not name a type
+  129 | TfLiteStatus ParseCos(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:132:1: error: 'TfLiteStatus' does not name a type
+  132 | TfLiteStatus ParseCumsum(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:135:1: error: 'TfLiteStatus' does not name a type
+  135 | TfLiteStatus ParseDepthToSpace(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:140:1: error: 'TfLiteStatus' does not name a type
+  140 | TfLiteStatus ParseDepthwiseConv2D(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:145:1: error: 'TfLiteStatus' does not name a type
+  145 | TfLiteStatus ParseDequantize(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:149:1: error: 'TfLiteStatus' does not name a type
+  149 | TfLiteStatus ParseDiv(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:152:1: error: 'TfLiteStatus' does not name a type
+  152 | TfLiteStatus ParseElu(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:155:1: error: 'TfLiteStatus' does not name a type
+  155 | TfLiteStatus ParseEmbeddingLookup(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:160:1: error: 'TfLiteStatus' does not name a type
+  160 | TfLiteStatus ParseEqual(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:163:1: error: 'TfLiteStatus' does not name a type
+  163 | TfLiteStatus ParseExp(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:166:1: error: 'TfLiteStatus' does not name a type
+  166 | TfLiteStatus ParseExpandDims(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:170:1: error: 'TfLiteStatus' does not name a type
+  170 | TfLiteStatus ParseFill(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:173:1: error: 'TfLiteStatus' does not name a type
+  173 | TfLiteStatus ParseFloor(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:176:1: error: 'TfLiteStatus' does not name a type
+  176 | TfLiteStatus ParseFloorDiv(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:180:1: error: 'TfLiteStatus' does not name a type
+  180 | TfLiteStatus ParseFloorMod(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:184:1: error: 'TfLiteStatus' does not name a type
+  184 | TfLiteStatus ParseFullyConnected(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:189:1: error: 'TfLiteStatus' does not name a type
+  189 | TfLiteStatus ParseGather(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:192:1: error: 'TfLiteStatus' does not name a type
+  192 | TfLiteStatus ParseGatherNd(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:196:1: error: 'TfLiteStatus' does not name a type
+  196 | TfLiteStatus ParseGreater(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:199:1: error: 'TfLiteStatus' does not name a type
+  199 | TfLiteStatus ParseGreaterEqual(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:204:1: error: 'TfLiteStatus' does not name a type
+  204 | TfLiteStatus ParseHardSwish(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:208:1: error: 'TfLiteStatus' does not name a type
+  208 | TfLiteStatus ParseIf(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:211:1: error: 'TfLiteStatus' does not name a type
+  211 | TfLiteStatus ParseL2Normalization(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:216:1: error: 'TfLiteStatus' does not name a type
+  216 | TfLiteStatus ParseLeakyRelu(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:220:1: error: 'TfLiteStatus' does not name a type
+  220 | TfLiteStatus ParseLess(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:223:1: error: 'TfLiteStatus' does not name a type
+  223 | TfLiteStatus ParseLessEqual(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:227:1: error: 'TfLiteStatus' does not name a type
+  227 | TfLiteStatus ParseLog(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:230:1: error: 'TfLiteStatus' does not name a type
+  230 | TfLiteStatus ParseLogicalAnd(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:234:1: error: 'TfLiteStatus' does not name a type
+  234 | TfLiteStatus ParseLogicalNot(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:238:1: error: 'TfLiteStatus' does not name a type
+  238 | TfLiteStatus ParseLogicalOr(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:242:1: error: 'TfLiteStatus' does not name a type
+  242 | TfLiteStatus ParseLogistic(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:246:1: error: 'TfLiteStatus' does not name a type
+  246 | TfLiteStatus ParseLogSoftmax(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:250:1: error: 'TfLiteStatus' does not name a type
+  250 | TfLiteStatus ParseLSTM(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:253:1: error: 'TfLiteStatus' does not name a type
+  253 | TfLiteStatus ParseMaximum(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:256:1: error: 'TfLiteStatus' does not name a type
+  256 | TfLiteStatus ParseMinimum(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:259:1: error: 'TfLiteStatus' does not name a type
+  259 | TfLiteStatus ParseMirrorPad(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:263:1: error: 'TfLiteStatus' does not name a type
+  263 | TfLiteStatus ParseMul(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:266:1: error: 'TfLiteStatus' does not name a type
+  266 | TfLiteStatus ParseNeg(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:269:1: error: 'TfLiteStatus' does not name a type
+  269 | TfLiteStatus ParseNotEqual(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:273:1: error: 'TfLiteStatus' does not name a type
+  273 | TfLiteStatus ParsePack(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:276:1: error: 'TfLiteStatus' does not name a type
+  276 | TfLiteStatus ParsePad(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:279:1: error: 'TfLiteStatus' does not name a type
+  279 | TfLiteStatus ParsePadV2(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:282:1: error: 'TfLiteStatus' does not name a type
+  282 | TfLiteStatus ParsePool(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:285:1: error: 'TfLiteStatus' does not name a type
+  285 | TfLiteStatus ParsePow(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:288:1: error: 'TfLiteStatus' does not name a type
+  288 | TfLiteStatus ParsePrelu(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:291:1: error: 'TfLiteStatus' does not name a type
+  291 | TfLiteStatus ParseQuantize(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:295:1: error: 'TfLiteStatus' does not name a type
+  295 | TfLiteStatus ParseReadVariable(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:300:1: error: 'TfLiteStatus' does not name a type
+  300 | TfLiteStatus ParseReducer(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:303:1: error: 'TfLiteStatus' does not name a type
+  303 | TfLiteStatus ParseRelu(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:306:1: error: 'TfLiteStatus' does not name a type
+  306 | TfLiteStatus ParseRelu6(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:309:1: error: 'TfLiteStatus' does not name a type
+  309 | TfLiteStatus ParseReshape(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:312:1: error: 'TfLiteStatus' does not name a type
+  312 | TfLiteStatus ParseResizeBilinear(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:317:1: error: 'TfLiteStatus' does not name a type
+  317 | TfLiteStatus ParseResizeNearestNeighbor(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:322:1: error: 'TfLiteStatus' does not name a type
+  322 | TfLiteStatus ParseRound(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:325:1: error: 'TfLiteStatus' does not name a type
+  325 | TfLiteStatus ParseRsqrt(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:328:1: error: 'TfLiteStatus' does not name a type
+  328 | TfLiteStatus ParseSelectV2(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:332:1: error: 'TfLiteStatus' does not name a type
+  332 | TfLiteStatus ParseShape(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:335:1: error: 'TfLiteStatus' does not name a type
+  335 | TfLiteStatus ParseSin(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:338:1: error: 'TfLiteStatus' does not name a type
+  338 | TfLiteStatus ParseSlice(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:341:1: error: 'TfLiteStatus' does not name a type
+  341 | TfLiteStatus ParseSoftmax(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:344:1: error: 'TfLiteStatus' does not name a type
+  344 | TfLiteStatus ParseSpaceToBatchNd(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:349:1: error: 'TfLiteStatus' does not name a type
+  349 | TfLiteStatus ParseSpaceToDepth(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:354:1: error: 'TfLiteStatus' does not name a type
+  354 | TfLiteStatus ParseSplit(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:357:1: error: 'TfLiteStatus' does not name a type
+  357 | TfLiteStatus ParseSplitV(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:360:1: error: 'TfLiteStatus' does not name a type
+  360 | TfLiteStatus ParseSqueeze(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:363:1: error: 'TfLiteStatus' does not name a type
+  363 | TfLiteStatus ParseSqrt(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:366:1: error: 'TfLiteStatus' does not name a type
+  366 | TfLiteStatus ParseSquare(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:369:1: error: 'TfLiteStatus' does not name a type
+  369 | TfLiteStatus ParseSquaredDifference(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:374:1: error: 'TfLiteStatus' does not name a type
+  374 | TfLiteStatus ParseStridedSlice(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:379:1: error: 'TfLiteStatus' does not name a type
+  379 | TfLiteStatus ParseSub(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:382:1: error: 'TfLiteStatus' does not name a type
+  382 | TfLiteStatus ParseSvdf(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:385:1: error: 'TfLiteStatus' does not name a type
+  385 | TfLiteStatus ParseTanh(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:388:1: error: 'TfLiteStatus' does not name a type
+  388 | TfLiteStatus ParseTranspose(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:392:1: error: 'TfLiteStatus' does not name a type
+  392 | TfLiteStatus ParseTransposeConv(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:397:1: error: 'TfLiteStatus' does not name a type
+  397 | TfLiteStatus ParseUnpack(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:400:1: error: 'TfLiteStatus' does not name a type
+  400 | TfLiteStatus ParseUnidirectionalSequenceLSTM(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:405:1: error: 'TfLiteStatus' does not name a type
+  405 | TfLiteStatus ParseVarHandle(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:409:1: error: 'TfLiteStatus' does not name a type
+  409 | TfLiteStatus ParseWhile(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:412:1: error: 'TfLiteStatus' does not name a type
+  412 | TfLiteStatus ParseZerosLike(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:416:1: error: 'TfLiteStatus' does not name a type
+  416 | TfLiteStatus ParseBitwiseXor(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:420:1: error: 'TfLiteStatus' does not name a type
+  420 | TfLiteStatus ParseRightShift(const Operator* op, ErrorReporter* error_reporter,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:424:1: error: 'TfLiteStatus' does not name a type
+  424 | TfLiteStatus ParseStablehloScatter(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:429:1: error: 'TfLiteStatus' does not name a type
+  429 | TfLiteStatus ParseStablehloRngBitGenerator(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:434:1: error: 'TfLiteStatus' does not name a type
+  434 | TfLiteStatus ParseStablehloGather(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:439:1: error: 'TfLiteStatus' does not name a type
+  439 | TfLiteStatus ParseStablehloReduceWindow(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:444:1: error: 'TfLiteStatus' does not name a type
+  444 | TfLiteStatus ParseStablehloPad(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:449:1: error: 'TfLiteStatus' does not name a type
+  449 | TfLiteStatus ParseStablehloComposite(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:454:1: error: 'TfLiteStatus' does not name a type
+  454 | TfLiteStatus ParseStablehloShiftLeft(const Operator* op,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:30:5: error: expected type-specifier before 'TfLiteStatus'
+   30 |     TfLiteStatus (*)(const Operator* op, ErrorReporter* error_reporter,
+      |     ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:35:1: error: 'TfLiteStatus' does not name a type
+   35 | TfLiteStatus ConvertTensorType(TensorType tensor_type, TfLiteType* type);
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:39:1: error: 'TfLiteStatus' does not name a type
+   39 | TfLiteStatus CallBuiltinParseFunction(TfLiteBridgeBuiltinParseFunction parser,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:39:1: error: 'TfLiteStatus' does not name a type
+   39 | TfLiteStatus InitializeTfLiteTensorFromFlatbuffer(
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:186:3: error: 'TfLiteStatus' does not name a type
+  186 |   TfLiteStatus FinishModelAllocation(
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:223:11: error: 'TfLiteStatus' does not name a type
+  223 |   virtual TfLiteStatus ResetTempAllocations();
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:238:3: error: 'TfLiteStatus' does not name a type
+  238 |   TfLiteStatus RequestScratchBufferInArena(size_t bytes, int subgraph_idx,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:245:3: error: 'TfLiteStatus' does not name a type
+  245 |   TfLiteStatus FinishPrepareNodeAllocations(int node_id);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:264:11: error: 'TfLiteStatus' does not name a type
+  264 |   virtual TfLiteStatus AllocateNodeAndRegistrations(
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:270:11: error: 'TfLiteStatus' does not name a type
+  270 |   virtual TfLiteStatus AllocateTfLiteEvalTensors(
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:276:11: error: 'TfLiteStatus' does not name a type
+  276 |   virtual TfLiteStatus AllocateVariables(
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:288:11: error: 'TfLiteStatus' does not name a type
+  288 |   virtual TfLiteStatus PopulateTfLiteTensorFromFlatbuffer(const Model* model,
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:302:11: error: 'TfLiteStatus' does not name a type
+  302 |   virtual TfLiteStatus CommitStaticMemoryPlan(
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:308:11: error: 'TfLiteStatus' does not name a type
+  308 |   virtual TfLiteStatus AllocateScratchBufferHandles(
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:314:3: error: 'TfLiteStatus' does not name a type
+  314 |   TfLiteStatus InitScratchBufferData();
+      |   ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_graph.h:21,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_context.h:20,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.h:21,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:27:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_resource_variable.h:41:3: error: 'TfLiteStatus' does not name a type
+   41 |   TfLiteStatus Read(int id, const TfLiteEvalTensor* tensor);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_resource_variable.h:46:3: error: 'TfLiteStatus' does not name a type
+   46 |   TfLiteStatus Allocate(int id, TfLiteContext* context,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_resource_variable.h:52:3: error: 'TfLiteStatus' does not name a type
+   52 |   TfLiteStatus Assign(int id, const TfLiteEvalTensor* tensor);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_resource_variable.h:55:3: error: 'TfLiteStatus' does not name a type
+   55 |   TfLiteStatus ResetAll();
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_graph.h:34:11: error: 'TfLiteStatus' does not name a type
+   34 |   virtual TfLiteStatus InvokeSubgraph(int subgraph_idx) = 0;
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_context.h:30:7: error: 'TfLiteStatus' does not name a type
+   30 | const TfLiteStatus kTfLiteAbort = static_cast<TfLiteStatus>(15);
+      |       ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_context.h:52:11: error: 'TfLiteStatus' does not name a type
+   52 |   virtual TfLiteStatus RequestScratchBufferInArena(size_t bytes,
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_context.h:98:11: error: 'TfLiteStatus' does not name a type
+   98 |   virtual TfLiteStatus set_external_context(void* external_context_payload) = 0;
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_context.h:145:8: error: 'TfLiteStatus' does not name a type
+  145 | inline TfLiteStatus MicroContextRequestScratchBufferInArena(TfLiteContext* ctx,
+      |        ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.h:22:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.h:44:11: error: 'TfLiteStatus' does not name a type
+   44 |   virtual TfLiteStatus InitSubgraphs();
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.h:48:11: error: 'TfLiteStatus' does not name a type
+   48 |   virtual TfLiteStatus PrepareSubgraphs();
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.h:52:11: error: 'TfLiteStatus' does not name a type
+   52 |   virtual TfLiteStatus ResetSubgraphs();
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.h:56:11: error: 'TfLiteStatus' does not name a type
+   56 |   virtual TfLiteStatus FreeSubgraphs();
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.h:60:11: error: 'TfLiteStatus' does not name a type
+   60 |   virtual TfLiteStatus InvokeSubgraph(int subgraph_idx);
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_graph.h:63:11: error: 'TfLiteStatus' does not name a type
+   63 |   virtual TfLiteStatus ResetVariableTensors();
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.h:59:11: error: 'TfLiteStatus' does not name a type
+   59 |   virtual TfLiteStatus RequestScratchBufferInArena(size_t bytes,
+      |           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter_context.h:98:3: error: 'TfLiteStatus' does not name a type
+   98 |   TfLiteStatus set_external_context(void* external_context_payload) override;
+      |   ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:29:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_op_resolver.h:47:11: error: 'TfLiteBridgeBuiltinParseFunction' does not name a type; did you mean 'TfLiteBridgeBuiltinDataAllocator'?
+   47 |   virtual TfLiteBridgeBuiltinParseFunction GetOpDataParser(
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |           TfLiteBridgeBuiltinDataAllocator
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_op_resolver.h:56:1: error: 'TfLiteStatus' does not name a type
+   56 | TfLiteStatus GetRegistrationFromOpCode(const OperatorCode* opcode,
+      | ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:31:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:39:11: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   39 | constexpr TfLiteType typeToTfLiteType() {
+      |           ^~~~~~~~~~
+      |           TfLiteNode
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:45:11: error: 'TfLiteType' has not been declared
+   45 | template <TfLiteType TFLITE_TYPE_ENUM>
+      |           ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:51:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   51 |   constexpr TfLiteType typeToTfLiteType<CPP_TYPE>() {          \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:65:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   65 | MATCH_TYPE_AND_TFLITE_TYPE(int32_t, kTfLiteInt32);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:55:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   55 |   constexpr TfLiteType typeToTfLiteType<const CPP_TYPE>() {    \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:65:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   65 | MATCH_TYPE_AND_TFLITE_TYPE(int32_t, kTfLiteInt32);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:65:37: error: 'kTfLiteInt32' was not declared in this scope
+   65 | MATCH_TYPE_AND_TFLITE_TYPE(int32_t, kTfLiteInt32);
+      |                                     ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:27: note: in definition of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                           ^~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:43: error: template argument 1 is invalid
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                                           ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:65:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   65 | MATCH_TYPE_AND_TFLITE_TYPE(int32_t, kTfLiteInt32);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:51:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   51 |   constexpr TfLiteType typeToTfLiteType<CPP_TYPE>() {          \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:66:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   66 | MATCH_TYPE_AND_TFLITE_TYPE(uint32_t, kTfLiteUInt32);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:55:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   55 |   constexpr TfLiteType typeToTfLiteType<const CPP_TYPE>() {    \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:66:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   66 | MATCH_TYPE_AND_TFLITE_TYPE(uint32_t, kTfLiteUInt32);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:66:38: error: 'kTfLiteUInt32' was not declared in this scope
+   66 | MATCH_TYPE_AND_TFLITE_TYPE(uint32_t, kTfLiteUInt32);
+      |                                      ^~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:27: note: in definition of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                           ^~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:43: error: template argument 1 is invalid
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                                           ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:66:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   66 | MATCH_TYPE_AND_TFLITE_TYPE(uint32_t, kTfLiteUInt32);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:51:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   51 |   constexpr TfLiteType typeToTfLiteType<CPP_TYPE>() {          \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:67:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   67 | MATCH_TYPE_AND_TFLITE_TYPE(int16_t, kTfLiteInt16);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:55:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   55 |   constexpr TfLiteType typeToTfLiteType<const CPP_TYPE>() {    \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:67:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   67 | MATCH_TYPE_AND_TFLITE_TYPE(int16_t, kTfLiteInt16);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:67:37: error: 'kTfLiteInt16' was not declared in this scope
+   67 | MATCH_TYPE_AND_TFLITE_TYPE(int16_t, kTfLiteInt16);
+      |                                     ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:27: note: in definition of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                           ^~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:43: error: template argument 1 is invalid
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                                           ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:67:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   67 | MATCH_TYPE_AND_TFLITE_TYPE(int16_t, kTfLiteInt16);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:51:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   51 |   constexpr TfLiteType typeToTfLiteType<CPP_TYPE>() {          \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:68:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   68 | MATCH_TYPE_AND_TFLITE_TYPE(uint16_t, kTfLiteUInt16);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:55:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   55 |   constexpr TfLiteType typeToTfLiteType<const CPP_TYPE>() {    \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:68:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   68 | MATCH_TYPE_AND_TFLITE_TYPE(uint16_t, kTfLiteUInt16);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:68:38: error: 'kTfLiteUInt16' was not declared in this scope
+   68 | MATCH_TYPE_AND_TFLITE_TYPE(uint16_t, kTfLiteUInt16);
+      |                                      ^~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:27: note: in definition of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                           ^~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:43: error: template argument 1 is invalid
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                                           ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:68:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   68 | MATCH_TYPE_AND_TFLITE_TYPE(uint16_t, kTfLiteUInt16);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:51:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   51 |   constexpr TfLiteType typeToTfLiteType<CPP_TYPE>() {          \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:69:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   69 | MATCH_TYPE_AND_TFLITE_TYPE(int64_t, kTfLiteInt64);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:55:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   55 |   constexpr TfLiteType typeToTfLiteType<const CPP_TYPE>() {    \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:69:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   69 | MATCH_TYPE_AND_TFLITE_TYPE(int64_t, kTfLiteInt64);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:69:37: error: 'kTfLiteInt64' was not declared in this scope
+   69 | MATCH_TYPE_AND_TFLITE_TYPE(int64_t, kTfLiteInt64);
+      |                                     ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:27: note: in definition of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                           ^~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:43: error: template argument 1 is invalid
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                                           ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:69:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   69 | MATCH_TYPE_AND_TFLITE_TYPE(int64_t, kTfLiteInt64);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:51:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   51 |   constexpr TfLiteType typeToTfLiteType<CPP_TYPE>() {          \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:70:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   70 | MATCH_TYPE_AND_TFLITE_TYPE(float, kTfLiteFloat32);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:55:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   55 |   constexpr TfLiteType typeToTfLiteType<const CPP_TYPE>() {    \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:70:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   70 | MATCH_TYPE_AND_TFLITE_TYPE(float, kTfLiteFloat32);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:70:35: error: 'kTfLiteFloat32' was not declared in this scope; did you mean 'TfLiteFloat16'?
+   70 | MATCH_TYPE_AND_TFLITE_TYPE(float, kTfLiteFloat32);
+      |                                   ^~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:27: note: in definition of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                           ^~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:43: error: template argument 1 is invalid
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                                           ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:70:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   70 | MATCH_TYPE_AND_TFLITE_TYPE(float, kTfLiteFloat32);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:51:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   51 |   constexpr TfLiteType typeToTfLiteType<CPP_TYPE>() {          \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:71:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   71 | MATCH_TYPE_AND_TFLITE_TYPE(unsigned char, kTfLiteUInt8);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:55:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   55 |   constexpr TfLiteType typeToTfLiteType<const CPP_TYPE>() {    \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:71:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   71 | MATCH_TYPE_AND_TFLITE_TYPE(unsigned char, kTfLiteUInt8);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:71:43: error: 'kTfLiteUInt8' was not declared in this scope
+   71 | MATCH_TYPE_AND_TFLITE_TYPE(unsigned char, kTfLiteUInt8);
+      |                                           ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:27: note: in definition of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                           ^~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:43: error: template argument 1 is invalid
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                                           ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:71:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   71 | MATCH_TYPE_AND_TFLITE_TYPE(unsigned char, kTfLiteUInt8);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:51:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   51 |   constexpr TfLiteType typeToTfLiteType<CPP_TYPE>() {          \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:72:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   72 | MATCH_TYPE_AND_TFLITE_TYPE(int8_t, kTfLiteInt8);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:55:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   55 |   constexpr TfLiteType typeToTfLiteType<const CPP_TYPE>() {    \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:72:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   72 | MATCH_TYPE_AND_TFLITE_TYPE(int8_t, kTfLiteInt8);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:72:36: error: 'kTfLiteInt8' was not declared in this scope; did you mean 'kTfLiteCustom'?
+   72 | MATCH_TYPE_AND_TFLITE_TYPE(int8_t, kTfLiteInt8);
+      |                                    ^~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:27: note: in definition of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                           ^~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:43: error: template argument 1 is invalid
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                                           ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:72:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   72 | MATCH_TYPE_AND_TFLITE_TYPE(int8_t, kTfLiteInt8);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:51:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   51 |   constexpr TfLiteType typeToTfLiteType<CPP_TYPE>() {          \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:73:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   73 | MATCH_TYPE_AND_TFLITE_TYPE(bool, kTfLiteBool);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:55:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   55 |   constexpr TfLiteType typeToTfLiteType<const CPP_TYPE>() {    \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:73:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   73 | MATCH_TYPE_AND_TFLITE_TYPE(bool, kTfLiteBool);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:73:34: error: 'kTfLiteBool' was not declared in this scope
+   73 | MATCH_TYPE_AND_TFLITE_TYPE(bool, kTfLiteBool);
+      |                                  ^~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:27: note: in definition of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                           ^~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:43: error: template argument 1 is invalid
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                                           ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:73:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   73 | MATCH_TYPE_AND_TFLITE_TYPE(bool, kTfLiteBool);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:51:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   51 |   constexpr TfLiteType typeToTfLiteType<CPP_TYPE>() {          \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:74:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   74 | MATCH_TYPE_AND_TFLITE_TYPE(TfLiteFloat16, kTfLiteFloat16);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:55:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   55 |   constexpr TfLiteType typeToTfLiteType<const CPP_TYPE>() {    \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:74:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   74 | MATCH_TYPE_AND_TFLITE_TYPE(TfLiteFloat16, kTfLiteFloat16);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:74:43: error: 'kTfLiteFloat16' was not declared in this scope; did you mean 'TfLiteFloat16'?
+   74 | MATCH_TYPE_AND_TFLITE_TYPE(TfLiteFloat16, kTfLiteFloat16);
+      |                                           ^~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:27: note: in definition of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                           ^~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:43: error: template argument 1 is invalid
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                                           ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:74:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   74 | MATCH_TYPE_AND_TFLITE_TYPE(TfLiteFloat16, kTfLiteFloat16);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:51:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   51 |   constexpr TfLiteType typeToTfLiteType<CPP_TYPE>() {          \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:75:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   75 | MATCH_TYPE_AND_TFLITE_TYPE(double, kTfLiteFloat64);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:55:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   55 |   constexpr TfLiteType typeToTfLiteType<const CPP_TYPE>() {    \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:75:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   75 | MATCH_TYPE_AND_TFLITE_TYPE(double, kTfLiteFloat64);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:75:36: error: 'kTfLiteFloat64' was not declared in this scope; did you mean 'TfLiteFloat16'?
+   75 | MATCH_TYPE_AND_TFLITE_TYPE(double, kTfLiteFloat64);
+      |                                    ^~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:27: note: in definition of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                           ^~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:43: error: template argument 1 is invalid
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                                           ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:75:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   75 | MATCH_TYPE_AND_TFLITE_TYPE(double, kTfLiteFloat64);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:51:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   51 |   constexpr TfLiteType typeToTfLiteType<CPP_TYPE>() {          \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:76:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   76 | MATCH_TYPE_AND_TFLITE_TYPE(uint64_t, kTfLiteUInt64);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:55:13: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+   55 |   constexpr TfLiteType typeToTfLiteType<const CPP_TYPE>() {    \
+      |             ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:76:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   76 | MATCH_TYPE_AND_TFLITE_TYPE(uint64_t, kTfLiteUInt64);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:76:38: error: 'kTfLiteUInt64' was not declared in this scope
+   76 | MATCH_TYPE_AND_TFLITE_TYPE(uint64_t, kTfLiteUInt64);
+      |                                      ^~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:27: note: in definition of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                           ^~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:59:43: error: template argument 1 is invalid
+   59 |   struct TfLiteTypeToType<TFLITE_TYPE_ENUM> {                  \
+      |                                           ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/portable_type_to_tflitetype.h:76:1: note: in expansion of macro 'MATCH_TYPE_AND_TFLITE_TYPE'
+   76 | MATCH_TYPE_AND_TFLITE_TYPE(uint64_t, kTfLiteUInt64);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:70:3: error: 'TfLiteStatus' does not name a type
+   70 |   TfLiteStatus AllocateTensors();
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:75:3: error: 'TfLiteStatus' does not name a type
+   75 |   TfLiteStatus Invoke();
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:81:3: error: 'TfLiteStatus' does not name a type
+   81 |   TfLiteStatus SetMicroExternalContext(void* external_context_payload);
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:124:3: error: 'TfLiteStatus' does not name a type
+  124 |   TfLiteStatus Reset();
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:126:3: error: 'TfLiteStatus' does not name a type
+  126 |   TfLiteStatus initialization_status() const { return initialization_status_; }
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:132:3: error: 'TfLiteStatus' does not name a type
+  132 |   TfLiteStatus PrepareNodeAndRegistrationDataFromFlatbuffer();
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:168:3: error: 'TfLiteStatus' does not name a type
+  168 |   TfLiteStatus initialization_status_;
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h: In member function 'T* tflite::MicroInterpreter::typed_input_tensor(int)':
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:94:23: error: 'TfLiteTensor' {aka 'struct TfLiteTensor'} has no member named 'type'
+   94 |       if (tensor_ptr->type == typeToTfLiteType<T>()) {
+      |                       ^~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:94:31: error: there are no arguments to 'typeToTfLiteType' that depend on a template parameter, so a declaration of 'typeToTfLiteType' must be available [-fpermissive]
+   94 |       if (tensor_ptr->type == typeToTfLiteType<T>()) {
+      |                               ^~~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:94:31: note: (if you use '-fpermissive', G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h: In member function 'T* tflite::MicroInterpreter::typed_output_tensor(int)':
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:112:23: error: 'TfLiteTensor' {aka 'struct TfLiteTensor'} has no member named 'type'
+  112 |       if (tensor_ptr->type == typeToTfLiteType<T>()) {
+      |                       ^~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:112:31: error: there are no arguments to 'typeToTfLiteType' that depend on a template parameter, so a declaration of 'typeToTfLiteType' must be available [-fpermissive]
+  112 |       if (tensor_ptr->type == typeToTfLiteType<T>()) {
+      |                               ^~~~~~~~~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/c/builtin_op_data.h:21,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/add.h:21,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:26,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:31:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/builtin_op_data.h: At global scope:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/builtin_op_data.h:101:3: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+  101 |   TfLiteType quantized_bias_type;
+      |   ^~~~~~~~~~
+      |   TfLiteNode
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/builtin_op_data.h:208:3: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+  208 |   TfLiteType quantized_bias_type;
+      |   ^~~~~~~~~~
+      |   TfLiteNode
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/builtin_op_data.h:376:3: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+  376 |   TfLiteType in_data_type;
+      |   ^~~~~~~~~~
+      |   TfLiteNode
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/builtin_op_data.h:377:3: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+  377 |   TfLiteType out_data_type;
+      |   ^~~~~~~~~~
+      |   TfLiteNode
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/builtin_op_data.h:431:3: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+  431 |   TfLiteType output_type;
+      |   ^~~~~~~~~~
+      |   TfLiteNode
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/builtin_op_data.h:435:3: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+  435 |   TfLiteType output_type;
+      |   ^~~~~~~~~~
+      |   TfLiteNode
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/builtin_op_data.h:449:3: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+  449 |   TfLiteType quantized_bias_type;
+      |   ^~~~~~~~~~
+      |   TfLiteNode
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/builtin_op_data.h:457:3: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+  457 |   TfLiteType out_type;
+      |   ^~~~~~~~~~
+      |   TfLiteNode
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/builtin_op_data.h:493:3: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+  493 |   TfLiteType index_out_type;
+      |   ^~~~~~~~~~
+      |   TfLiteNode
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/builtin_op_data.h:530:3: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+  530 |   TfLiteType key_dtype;
+      |   ^~~~~~~~~~
+      |   TfLiteNode
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/builtin_op_data.h:531:3: error: 'TfLiteType' does not name a type; did you mean 'TfLiteNode'?
+  531 |   TfLiteType value_dtype;
+      |   ^~~~~~~~~~
+      |   TfLiteNode
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/add.h:56:1: error: 'TfLiteStatus' does not name a type
+   56 | TfLiteStatus CalculateOpDataAdd(TfLiteContext* context, TfLiteAddParams* params,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/add.h:61:1: error: 'TfLiteStatus' does not name a type
+   61 | TfLiteStatus AddPrepare(TfLiteContext* context, TfLiteNode* node);
+      | ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:27:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/conv.h:70:1: error: 'TfLiteStatus' does not name a type
+   70 | TfLiteStatus CalculateOpDataConv(TfLiteContext* context, TfLiteNode* node,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/conv.h:79:1: error: 'TfLiteStatus' does not name a type
+   79 | TfLiteStatus ConvPrepare(TfLiteContext* context, TfLiteNode* node);
+      | ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:28:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/depthwise_conv.h:44:1: error: 'TfLiteStatus' does not name a type
+   44 | TfLiteStatus CalculateOpDataDepthwiseConv(
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/depthwise_conv.h:50:1: error: 'TfLiteStatus' does not name a type
+   50 | TfLiteStatus DepthwiseConvPrepare(TfLiteContext* context, TfLiteNode* node);
+      | ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:30:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/fully_connected.h:70:1: error: 'TfLiteStatus' does not name a type
+   70 | TfLiteStatus CalculateOpDataFullyConnected(
+      | ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:32:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/mul.h:46:1: error: 'TfLiteStatus' does not name a type
+   46 | TfLiteStatus CalculateOpDataMul(TfLiteContext* context, TfLiteNode* node,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/mul.h:49:1: error: 'TfLiteStatus' does not name a type
+   49 | TfLiteStatus MulPrepare(TfLiteContext* context, TfLiteNode* node);
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/mul.h:51:1: error: 'TfLiteStatus' does not name a type
+   51 | TfLiteStatus EvalMulQuantizedReference(TfLiteContext* context, TfLiteNode* node,
+      | ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/pooling.h:26,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:33:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:57:1: error: 'TfLiteStatus' does not name a type
+   57 | TfLiteStatus GetInputSafe(const TfLiteContext* context, const TfLiteNode* node,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:88:1: error: 'TfLiteStatus' does not name a type
+   88 | TfLiteStatus GetOutputSafe(const TfLiteContext* context, const TfLiteNode* node,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h: In function 'bool tflite::IsHybridOp(const TfLiteTensor*, const TfLiteTensor*)':
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:238:20: error: 'const TfLiteTensor' {aka 'const struct TfLiteTensor'} has no member named 'type'
+  238 |   return ((weight->type == kTfLiteUInt8 || weight->type == kTfLiteInt8) &&
+      |                    ^~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:238:28: error: 'kTfLiteUInt8' was not declared in this scope
+  238 |   return ((weight->type == kTfLiteUInt8 || weight->type == kTfLiteInt8) &&
+      |                            ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:238:52: error: 'const TfLiteTensor' {aka 'const struct TfLiteTensor'} has no member named 'type'
+  238 |   return ((weight->type == kTfLiteUInt8 || weight->type == kTfLiteInt8) &&
+      |                                                    ^~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:238:60: error: 'kTfLiteInt8' was not declared in this scope; did you mean 'kTfLiteCustom'?
+  238 |   return ((weight->type == kTfLiteUInt8 || weight->type == kTfLiteInt8) &&
+      |                                                            ^~~~~~~~~~~
+      |                                                            kTfLiteCustom
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:239:18: error: 'const TfLiteTensor' {aka 'const struct TfLiteTensor'} has no member named 'type'
+  239 |           input->type == kTfLiteFloat32);
+      |                  ^~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:239:26: error: 'kTfLiteFloat32' was not declared in this scope; did you mean 'TfLiteFloat16'?
+  239 |           input->type == kTfLiteFloat32);
+      |                          ^~~~~~~~~~~~~~
+      |                          TfLiteFloat16
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h: At global scope:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:243:1: error: 'TfLiteStatus' does not name a type
+  243 | TfLiteStatus PopulateConvolutionQuantizationParams(
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:250:1: error: 'TfLiteStatus' does not name a type
+  250 | TfLiteStatus PopulateConvolutionQuantizationParams(
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:261:1: error: 'TfLiteStatus' does not name a type
+  261 | TfLiteStatus GetQuantizedConvolutionMultipler(TfLiteContext* context,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:268:1: error: 'TfLiteStatus' does not name a type
+  268 | TfLiteStatus GetQuantizedConvolutionMultipler(TfLiteContext* context,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:276:1: error: 'TfLiteStatus' does not name a type
+  276 | TfLiteStatus CalculateActivationRangeQuantized(TfLiteContext* context,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:319:1: error: 'TfLiteStatus' does not name a type
+  319 | TfLiteStatus CalculateShapeForBroadcast(TfLiteContext* context,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:326:1: error: 'TfLiteStatus' does not name a type
+  326 | TfLiteStatus CalculateShapeForBroadcast(TfLiteContext* context,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/kernel_util.h:333:23: error: 'TfLiteType' was not declared in this scope; did you mean 'TfLiteNode'?
+  333 | int TfLiteTypeGetSize(TfLiteType type);
+      |                       ^~~~~~~~~~
+      |                       TfLiteNode
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/pooling.h:28:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:33:5: error: 'TfLiteStatus' has not been declared
+   33 |     TfLiteStatus (*prepare)(TfLiteContext* context, TfLiteNode* node),
+      |     ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:34:5: error: 'TfLiteStatus' has not been declared
+   34 |     TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node),
+      |     ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:39:5: error: 'TFLMInferenceRegistration tflite::micro::RegisterOp' redeclared as different kind of entity
+   39 |     TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node),
+      |     ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:31:18: note: previous declaration 'TFLMRegistration tflite::micro::RegisterOp(void* (*)(TfLiteContext*, const char*, size_t), int (*)(TfLiteContext*, TfLiteNode*), int (*)(TfLiteContext*, TfLiteNode*), void (*)(TfLiteContext*, void*), void (*)(TfLiteContext*, void*))'
+   31 | TFLMRegistration RegisterOp(
+      |                  ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:39:20: error: 'invoke' was not declared in this scope; did you mean 'std::invoke'?
+   39 |     TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node),
+      |                    ^~~~~~
+      |                    std::invoke
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/third_party/flatbuffers/include/flatbuffers/flatbuffer_builder.h:22,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/third_party/flatbuffers/include/flatbuffers/flatbuffers.h:29,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:21:
+/home/viciac/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/functional:117:5: note: 'std::invoke' declared here
+  117 |     invoke(_Callable&& __fn, _Args&&... __args)
+      |     ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:39:5: error: 'TfLiteStatus' was not declared in this scope
+   39 |     TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node),
+      |     ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:39:41: error: expected primary-expression before '*' token
+   39 |     TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node),
+      |                                         ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:39:43: error: 'context' was not declared in this scope
+   39 |     TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node),
+      |                                           ^~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:39:62: error: expected primary-expression before '*' token
+   39 |     TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node),
+      |                                                              ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:39:64: error: 'node' was not declared in this scope
+   39 |     TfLiteStatus (*invoke)(TfLiteContext* context, TfLiteNode* node),
+      |                                                                ^~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:40:12: error: 'reset' was not declared in this scope
+   40 |     void (*reset)(TfLiteContext* context, void* buffer) = nullptr);
+      |            ^~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:40:32: error: expected primary-expression before '*' token
+   40 |     void (*reset)(TfLiteContext* context, void* buffer) = nullptr);
+      |                                ^
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:40:34: error: 'context' was not declared in this scope
+   40 |     void (*reset)(TfLiteContext* context, void* buffer) = nullptr);
+      |                                  ^~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:40:43: error: expected primary-expression before 'void'
+   40 |     void (*reset)(TfLiteContext* context, void* buffer) = nullptr);
+      |                                           ^~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:132:1: error: 'TfLiteStatus' does not name a type
+  132 | TfLiteStatus CreateWritableTensorDimsWithCopy(TfLiteContext* context,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:138:1: error: 'TfLiteStatus' does not name a type
+  138 | TfLiteStatus CopyOpInputsToOpOutputs(TfLiteContext* context, TfLiteNode* node);
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:143:1: error: 'TfLiteStatus' does not name a type
+  143 | TfLiteStatus CopyOpInputsToSubgraphInputs(TfLiteContext* context,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:152:1: error: 'TfLiteStatus' does not name a type
+  152 | TfLiteStatus CopyOpOutputsToSubgraphInputs(TfLiteContext* context,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/kernel_util.h:159:1: error: 'TfLiteStatus' does not name a type
+  159 | TfLiteStatus CopySubgraphOutputsToOpOutputs(TfLiteContext* context,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/pooling.h:45:1: error: 'TfLiteStatus' does not name a type
+   45 | TfLiteStatus CalculateOpDataPooling(const TfLiteContext* context,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/pooling.h:51:1: error: 'TfLiteStatus' does not name a type
+   51 | TfLiteStatus PoolingPrepare(TfLiteContext* context, TfLiteNode* node);
+      | ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/internal/types.h:23,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/internal/tensor_ctypes.h:22,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:25:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/pooling.h: In function 'void tflite::AveragePoolingEvalQuantized(TfLiteContext*, const TfLiteNode*, const TfLitePoolParams*, const OpDataPooling*, const TfLiteEvalTensor*, TfLiteEvalTensor*)':
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/pooling.h:66:24: error: 'const TfLiteEvalTensor' {aka 'const struct TfLiteEvalTensor'} has no member named 'type'
+   66 |   TFLITE_DCHECK(input->type == kTfLiteInt8 || input->type == kTfLiteInt16);
+      |                        ^~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/internal/compatibility.h:23:35: note: in definition of macro 'TFLITE_DCHECK'
+   23 | #define TFLITE_DCHECK(condition) (condition) ? (void)0 : TFLITE_ASSERT_FALSE
+      |                                   ^~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/pooling.h:66:32: error: 'kTfLiteInt8' was not declared in this scope; did you mean 'kTfLiteCustom'?
+   66 |   TFLITE_DCHECK(input->type == kTfLiteInt8 || input->type == kTfLiteInt16);
+      |                                ^~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/internal/compatibility.h:23:35: note: in definition of macro 'TFLITE_DCHECK'
+   23 | #define TFLITE_DCHECK(condition) (condition) ? (void)0 : TFLITE_ASSERT_FALSE
+      |                                   ^~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/pooling.h:66:54: error: 'const TfLiteEvalTensor' {aka 'const struct TfLiteEvalTensor'} has no member named 'type'
+   66 |   TFLITE_DCHECK(input->type == kTfLiteInt8 || input->type == kTfLiteInt16);
+      |                                                      ^~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/internal/compatibility.h:23:35: note: in definition of macro 'TFLITE_DCHECK'
+   23 | #define TFLITE_DCHECK(condition) (condition) ? (void)0 : TFLITE_ASSERT_FALSE
+      |                                   ^~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/pooling.h:66:62: error: 'kTfLiteInt16' was not declared in this scope
+   66 |   TFLITE_DCHECK(input->type == kTfLiteInt8 || input->type == kTfLiteInt16);
+      |                                                              ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/internal/compatibility.h:23:35: note: in definition of macro 'TFLITE_DCHECK'
+   23 | #define TFLITE_DCHECK(condition) (condition) ? (void)0 : TFLITE_ASSERT_FALSE
+      |                                   ^~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/pooling.h: In function 'void tflite::MaxPoolingEvalQuantized(TfLiteContext*, TfLiteNode*, TfLitePoolParams*, const OpDataPooling*, const TfLiteEvalTensor*, TfLiteEvalTensor*)':
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/pooling.h:96:24: error: 'const TfLiteEvalTensor' {aka 'const struct TfLiteEvalTensor'} has no member named 'type'
+   96 |   TFLITE_DCHECK(input->type == kTfLiteInt8 || input->type == kTfLiteInt16);
+      |                        ^~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/internal/compatibility.h:23:35: note: in definition of macro 'TFLITE_DCHECK'
+   23 | #define TFLITE_DCHECK(condition) (condition) ? (void)0 : TFLITE_ASSERT_FALSE
+      |                                   ^~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/pooling.h:96:32: error: 'kTfLiteInt8' was not declared in this scope; did you mean 'kTfLiteCustom'?
+   96 |   TFLITE_DCHECK(input->type == kTfLiteInt8 || input->type == kTfLiteInt16);
+      |                                ^~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/internal/compatibility.h:23:35: note: in definition of macro 'TFLITE_DCHECK'
+   23 | #define TFLITE_DCHECK(condition) (condition) ? (void)0 : TFLITE_ASSERT_FALSE
+      |                                   ^~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/pooling.h:96:54: error: 'const TfLiteEvalTensor' {aka 'const struct TfLiteEvalTensor'} has no member named 'type'
+   96 |   TFLITE_DCHECK(input->type == kTfLiteInt8 || input->type == kTfLiteInt16);
+      |                                                      ^~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/internal/compatibility.h:23:35: note: in definition of macro 'TFLITE_DCHECK'
+   23 | #define TFLITE_DCHECK(condition) (condition) ? (void)0 : TFLITE_ASSERT_FALSE
+      |                                   ^~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/pooling.h:96:62: error: 'kTfLiteInt16' was not declared in this scope
+   96 |   TFLITE_DCHECK(input->type == kTfLiteInt8 || input->type == kTfLiteInt16);
+      |                                                              ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/kernels/internal/compatibility.h:23:35: note: in definition of macro 'TFLITE_DCHECK'
+   23 | #define TFLITE_DCHECK(condition) (condition) ? (void)0 : TFLITE_ASSERT_FALSE
+      |                                   ^~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:34:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/reduce.h: At global scope:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/reduce.h:43:1: error: 'TfLiteStatus' does not name a type
+   43 | TfLiteStatus PrepareMaxHelper(TfLiteContext* context, TfLiteNode* node,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/reduce.h:46:1: error: 'TfLiteStatus' does not name a type
+   46 | TfLiteStatus PrepareMeanOrSumHelper(TfLiteContext* context, TfLiteNode* node,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/reduce.h:49:1: error: 'TfLiteStatus' does not name a type
+   49 | TfLiteStatus EvalMaxHelper(TfLiteContext* context, TfLiteNode* node,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/reduce.h:51:1: error: 'TfLiteStatus' does not name a type
+   51 | TfLiteStatus EvalMeanHelper(TfLiteContext* context, TfLiteNode* node,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/reduce.h:53:1: error: 'TfLiteStatus' does not name a type
+   53 | TfLiteStatus EvalSumHelper(TfLiteContext* context, TfLiteNode* node,
+      | ^~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:35:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/softmax.h:27:1: error: 'TfLiteStatus' does not name a type
+   27 | TfLiteStatus CalculateSoftmaxParams(TfLiteContext* context,
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/kernels/softmax.h:33:1: error: 'TfLiteStatus' does not name a type
+   33 | TfLiteStatus SoftmaxPrepare(TfLiteContext* context, TfLiteNode* node);
+      | ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:74:3: error: 'TfLiteBridgeBuiltinParseFunction' does not name a type; did you mean 'TfLiteBridgeBuiltinDataAllocator'?
+   74 |   TfLiteBridgeBuiltinParseFunction GetOpDataParser(
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   TfLiteBridgeBuiltinDataAllocator
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:89:3: error: 'TfLiteStatus' does not name a type
+   89 |   TfLiteStatus AddCustom(const char* name,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:117:3: error: 'TfLiteStatus' does not name a type
+  117 |   TfLiteStatus AddAbs() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:121:3: error: 'TfLiteStatus' does not name a type
+  121 |   TfLiteStatus AddAdd(const TFLMRegistration& registration = Register_ADD()) {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:125:3: error: 'TfLiteStatus' does not name a type
+  125 |   TfLiteStatus AddAddN() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:130:3: error: 'TfLiteStatus' does not name a type
+  130 |   TfLiteStatus AddArgMax() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:134:3: error: 'TfLiteStatus' does not name a type
+  134 |   TfLiteStatus AddArgMin() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:138:3: error: 'TfLiteStatus' does not name a type
+  138 |   TfLiteStatus AddAssignVariable() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:143:3: error: 'TfLiteStatus' does not name a type
+  143 |   TfLiteStatus AddAveragePool2D(
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:148:3: error: 'TfLiteStatus' does not name a type
+  148 |   TfLiteStatus AddBatchMatMul() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:153:3: error: 'TfLiteStatus' does not name a type
+  153 |   TfLiteStatus AddBatchToSpaceNd() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:158:3: error: 'TfLiteStatus' does not name a type
+  158 |   TfLiteStatus AddBroadcastArgs() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:163:3: error: 'TfLiteStatus' does not name a type
+  163 |   TfLiteStatus AddBroadcastTo() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:168:3: error: 'TfLiteStatus' does not name a type
+  168 |   TfLiteStatus AddCallOnce() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:173:3: error: 'TfLiteStatus' does not name a type
+  173 |   TfLiteStatus AddCast() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:177:3: error: 'TfLiteStatus' does not name a type
+  177 |   TfLiteStatus AddCeil() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:181:3: error: 'TfLiteStatus' does not name a type
+  181 |   TfLiteStatus AddCircularBuffer() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:185:3: error: 'TfLiteStatus' does not name a type
+  185 |   TfLiteStatus AddConcatenation() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:190:3: error: 'TfLiteStatus' does not name a type
+  190 |   TfLiteStatus AddConv2D(
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:195:3: error: 'TfLiteStatus' does not name a type
+  195 |   TfLiteStatus AddCos() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:199:3: error: 'TfLiteStatus' does not name a type
+  199 |   TfLiteStatus AddCumSum() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:204:3: error: 'TfLiteStatus' does not name a type
+  204 |   TfLiteStatus AddDelay() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:209:3: error: 'TfLiteStatus' does not name a type
+  209 |   TfLiteStatus AddDepthToSpace() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:214:3: error: 'TfLiteStatus' does not name a type
+  214 |   TfLiteStatus AddDepthwiseConv2D(
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:220:3: error: 'TfLiteStatus' does not name a type
+  220 |   TfLiteStatus AddDequantize() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:225:3: error: 'TfLiteStatus' does not name a type
+  225 |   TfLiteStatus AddDetectionPostprocess() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:230:3: error: 'TfLiteStatus' does not name a type
+  230 |   TfLiteStatus AddDiv() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:234:3: error: 'TfLiteStatus' does not name a type
+  234 |   TfLiteStatus AddEmbeddingLookup() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:239:3: error: 'TfLiteStatus' does not name a type
+  239 |   TfLiteStatus AddEnergy() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:244:3: error: 'TfLiteStatus' does not name a type
+  244 |   TfLiteStatus AddElu() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:248:3: error: 'TfLiteStatus' does not name a type
+  248 |   TfLiteStatus AddEqual() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:252:3: error: 'TfLiteStatus' does not name a type
+  252 |   TfLiteStatus AddEthosU() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:260:3: error: 'TfLiteStatus' does not name a type
+  260 |   TfLiteStatus AddExp() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:264:3: error: 'TfLiteStatus' does not name a type
+  264 |   TfLiteStatus AddExpandDims() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:269:3: error: 'TfLiteStatus' does not name a type
+  269 |   TfLiteStatus AddFftAutoScale() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:275:3: error: 'TfLiteStatus' does not name a type
+  275 |   TfLiteStatus AddFill() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:279:3: error: 'TfLiteStatus' does not name a type
+  279 |   TfLiteStatus AddFilterBank() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:284:3: error: 'TfLiteStatus' does not name a type
+  284 |   TfLiteStatus AddFilterBankLog() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:290:3: error: 'TfLiteStatus' does not name a type
+  290 |   TfLiteStatus AddFilterBankSquareRoot() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:296:3: error: 'TfLiteStatus' does not name a type
+  296 |   TfLiteStatus AddFilterBankSpectralSubtraction() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:304:3: error: 'TfLiteStatus' does not name a type
+  304 |   TfLiteStatus AddFloor() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:308:3: error: 'TfLiteStatus' does not name a type
+  308 |   TfLiteStatus AddFloorDiv() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:313:3: error: 'TfLiteStatus' does not name a type
+  313 |   TfLiteStatus AddFloorMod() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:318:3: error: 'TfLiteStatus' does not name a type
+  318 |   TfLiteStatus AddFramer() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:323:3: error: 'TfLiteStatus' does not name a type
+  323 |   TfLiteStatus AddFullyConnected(
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:329:3: error: 'TfLiteStatus' does not name a type
+  329 |   TfLiteStatus AddGather() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:334:3: error: 'TfLiteStatus' does not name a type
+  334 |   TfLiteStatus AddGatherNd() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:339:3: error: 'TfLiteStatus' does not name a type
+  339 |   TfLiteStatus AddGreater() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:344:3: error: 'TfLiteStatus' does not name a type
+  344 |   TfLiteStatus AddGreaterEqual() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:349:3: error: 'TfLiteStatus' does not name a type
+  349 |   TfLiteStatus AddHardSwish() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:354:3: error: 'TfLiteStatus' does not name a type
+  354 |   TfLiteStatus AddIf() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:358:3: error: 'TfLiteStatus' does not name a type
+  358 |   TfLiteStatus AddIrfft(const TFLMRegistration* registration =
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:364:3: error: 'TfLiteStatus' does not name a type
+  364 |   TfLiteStatus AddL2Normalization() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:369:3: error: 'TfLiteStatus' does not name a type
+  369 |   TfLiteStatus AddL2Pool2D() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:374:3: error: 'TfLiteStatus' does not name a type
+  374 |   TfLiteStatus AddLeakyRelu() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:379:3: error: 'TfLiteStatus' does not name a type
+  379 |   TfLiteStatus AddLess() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:383:3: error: 'TfLiteStatus' does not name a type
+  383 |   TfLiteStatus AddLessEqual() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:388:3: error: 'TfLiteStatus' does not name a type
+  388 |   TfLiteStatus AddLog() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:392:3: error: 'TfLiteStatus' does not name a type
+  392 |   TfLiteStatus AddLogicalAnd() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:397:3: error: 'TfLiteStatus' does not name a type
+  397 |   TfLiteStatus AddLogicalNot() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:402:3: error: 'TfLiteStatus' does not name a type
+  402 |   TfLiteStatus AddLogicalOr() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:407:3: error: 'TfLiteStatus' does not name a type
+  407 |   TfLiteStatus AddLogistic() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:412:3: error: 'TfLiteStatus' does not name a type
+  412 |   TfLiteStatus AddLogSoftmax() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:417:3: error: 'TfLiteStatus' does not name a type
+  417 |   TfLiteStatus AddMaximum() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:422:3: error: 'TfLiteStatus' does not name a type
+  422 |   TfLiteStatus AddMaxPool2D(
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:427:3: error: 'TfLiteStatus' does not name a type
+  427 |   TfLiteStatus AddMirrorPad() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:432:3: error: 'TfLiteStatus' does not name a type
+  432 |   TfLiteStatus AddMean() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:436:3: error: 'TfLiteStatus' does not name a type
+  436 |   TfLiteStatus AddMinimum() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:441:3: error: 'TfLiteStatus' does not name a type
+  441 |   TfLiteStatus AddMul(const TFLMRegistration& registration = Register_MUL()) {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:445:3: error: 'TfLiteStatus' does not name a type
+  445 |   TfLiteStatus AddNeg() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:449:3: error: 'TfLiteStatus' does not name a type
+  449 |   TfLiteStatus AddNotEqual() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:454:3: error: 'TfLiteStatus' does not name a type
+  454 |   TfLiteStatus AddOverlapAdd() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:460:3: error: 'TfLiteStatus' does not name a type
+  460 |   TfLiteStatus AddPack() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:464:3: error: 'TfLiteStatus' does not name a type
+  464 |   TfLiteStatus AddPad(const TFLMRegistration& registration = Register_PAD()) {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:468:3: error: 'TfLiteStatus' does not name a type
+  468 |   TfLiteStatus AddPadV2() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:472:3: error: 'TfLiteStatus' does not name a type
+  472 |   TfLiteStatus AddPCAN() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:477:3: error: 'TfLiteStatus' does not name a type
+  477 |   TfLiteStatus AddPrelu() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:482:3: error: 'TfLiteStatus' does not name a type
+  482 |   TfLiteStatus AddQuantize() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:487:3: error: 'TfLiteStatus' does not name a type
+  487 |   TfLiteStatus AddReadVariable() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:492:3: error: 'TfLiteStatus' does not name a type
+  492 |   TfLiteStatus AddReduceMax() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:497:3: error: 'TfLiteStatus' does not name a type
+  497 |   TfLiteStatus AddRelu() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:501:3: error: 'TfLiteStatus' does not name a type
+  501 |   TfLiteStatus AddRelu6() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:506:3: error: 'TfLiteStatus' does not name a type
+  506 |   TfLiteStatus AddReshape() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:511:3: error: 'TfLiteStatus' does not name a type
+  511 |   TfLiteStatus AddResizeBilinear() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:516:3: error: 'TfLiteStatus' does not name a type
+  516 |   TfLiteStatus AddResizeNearestNeighbor() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:522:3: error: 'TfLiteStatus' does not name a type
+  522 |   TfLiteStatus AddRfft(const TFLMRegistration* registration =
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:528:3: error: 'TfLiteStatus' does not name a type
+  528 |   TfLiteStatus AddRound() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:532:3: error: 'TfLiteStatus' does not name a type
+  532 |   TfLiteStatus AddRsqrt() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:536:3: error: 'TfLiteStatus' does not name a type
+  536 |   TfLiteStatus AddSelectV2() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:541:3: error: 'TfLiteStatus' does not name a type
+  541 |   TfLiteStatus AddShape() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:545:3: error: 'TfLiteStatus' does not name a type
+  545 |   TfLiteStatus AddSin() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:549:3: error: 'TfLiteStatus' does not name a type
+  549 |   TfLiteStatus AddSlice() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:553:3: error: 'TfLiteStatus' does not name a type
+  553 |   TfLiteStatus AddSoftmax(
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:558:3: error: 'TfLiteStatus' does not name a type
+  558 |   TfLiteStatus AddSpaceToBatchNd() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:563:3: error: 'TfLiteStatus' does not name a type
+  563 |   TfLiteStatus AddSpaceToDepth() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:568:3: error: 'TfLiteStatus' does not name a type
+  568 |   TfLiteStatus AddSplit() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:572:3: error: 'TfLiteStatus' does not name a type
+  572 |   TfLiteStatus AddSplitV() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:576:3: error: 'TfLiteStatus' does not name a type
+  576 |   TfLiteStatus AddSqueeze() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:581:3: error: 'TfLiteStatus' does not name a type
+  581 |   TfLiteStatus AddSqrt() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:585:3: error: 'TfLiteStatus' does not name a type
+  585 |   TfLiteStatus AddSquare() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:589:3: error: 'TfLiteStatus' does not name a type
+  589 |   TfLiteStatus AddSquaredDifference() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:595:3: error: 'TfLiteStatus' does not name a type
+  595 |   TfLiteStatus AddStridedSlice() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:600:3: error: 'TfLiteStatus' does not name a type
+  600 |   TfLiteStatus AddStacker() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:605:3: error: 'TfLiteStatus' does not name a type
+  605 |   TfLiteStatus AddSub() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:609:3: error: 'TfLiteStatus' does not name a type
+  609 |   TfLiteStatus AddSum() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:613:3: error: 'TfLiteStatus' does not name a type
+  613 |   TfLiteStatus AddSvdf(const TFLMRegistration& registration = Register_SVDF()) {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:617:3: error: 'TfLiteStatus' does not name a type
+  617 |   TfLiteStatus AddTanh() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:621:3: error: 'TfLiteStatus' does not name a type
+  621 |   TfLiteStatus AddTransposeConv(
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:627:3: error: 'TfLiteStatus' does not name a type
+  627 |   TfLiteStatus AddTranspose() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:632:3: error: 'TfLiteStatus' does not name a type
+  632 |   TfLiteStatus AddUnpack() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:636:3: error: 'TfLiteStatus' does not name a type
+  636 |   TfLiteStatus AddUnidirectionalSequenceLSTM(
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:643:3: error: 'TfLiteStatus' does not name a type
+  643 |   TfLiteStatus AddVarHandle() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:648:3: error: 'TfLiteStatus' does not name a type
+  648 |   TfLiteStatus AddWhile() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:652:3: error: 'TfLiteStatus' does not name a type
+  652 |   TfLiteStatus AddWindow() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:657:3: error: 'TfLiteStatus' does not name a type
+  657 |   TfLiteStatus AddZerosLike() {
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:665:3: error: 'TfLiteStatus' does not name a type
+  665 |   TfLiteStatus AddBuiltin(tflite::BuiltinOperator op,
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_mutable_op_resolver.h:705:3: error: 'TfLiteBridgeBuiltinParseFunction' does not name a type; did you mean 'TfLiteBridgeBuiltinDataAllocator'?
+  705 |   TfLiteBridgeBuiltinParseFunction builtin_parsers_[tOpCount];
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   TfLiteBridgeBuiltinDataAllocator
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc: In function 'void setup()':
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:105:21: error: 'class tflite::MicroMutableOpResolver<6>' has no member named 'AddMaxPool2D'
+  105 |   micro_op_resolver.AddMaxPool2D();
+      |                     ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:106:21: error: 'class tflite::MicroMutableOpResolver<6>' has no member named 'AddConv2D'
+  106 |   micro_op_resolver.AddConv2D();
+      |                     ^~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:107:21: error: 'class tflite::MicroMutableOpResolver<6>' has no member named 'AddReshape'
+  107 |   micro_op_resolver.AddReshape();
+      |                     ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:108:21: error: 'class tflite::MicroMutableOpResolver<6>' has no member named 'AddFullyConnected'
+  108 |   micro_op_resolver.AddFullyConnected();
+      |                     ^~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:109:21: error: 'class tflite::MicroMutableOpResolver<6>' has no member named 'AddSoftmax'
+  109 |   micro_op_resolver.AddSoftmax();
+      |                     ^~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:110:21: error: 'class tflite::MicroMutableOpResolver<6>' has no member named 'AddQuantize'
+  110 |   micro_op_resolver.AddQuantize();
+      |                     ^~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:118:3: error: 'TfLiteStatus' was not declared in this scope
+  118 |   TfLiteStatus allocate_status = interpreter->AllocateTensors();
+      |   ^~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:119:7: error: 'allocate_status' was not declared in this scope
+  119 |   if (allocate_status != kTfLiteOk) {
+      |       ^~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:119:26: error: 'kTfLiteOk' was not declared in this scope
+  119 |   if (allocate_status != kTfLiteOk) {
+      |                          ^~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:129:15: error: expected ';' before 'init_status'
+  129 |   TfLiteStatus init_status = InitCamera();
+      |               ^~~~~~~~~~~~
+      |               ;
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:130:7: error: 'init_status' was not declared in this scope; did you mean 'initstate'?
+  130 |   if (init_status != kTfLiteOk) {
+      |       ^~~~~~~~~~~
+      |       initstate
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:130:22: error: 'kTfLiteOk' was not declared in this scope
+  130 |   if (init_status != kTfLiteOk) {
+      |                      ^~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc: In function 'void loop()':
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:146:5: error: 'ledcSetup' was not declared in this scope; did you mean 'ledc_stop'?
+  146 |     ledcSetup(pwmChannelServo1, pwmFreq, pwmResolution);
+      |     ^~~~~~~~~
+      |     ledc_stop
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:150:5: error: 'ledcAttachPin' was not declared in this scope
+  150 |     ledcAttachPin(GPIO_NUM_12, pwmChannelServo1);
+      |     ^~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:200:13: error: 'kTfLiteOk' was not declared in this scope
+  200 |         if (kTfLiteOk != GetImage(kNumCols, kNumRows, kNumChannels, input->data.int8)) {
+      |             ^~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:200:26: error: 'GetImage' was not declared in this scope
+  200 |         if (kTfLiteOk != GetImage(kNumCols, kNumRows, kNumChannels, input->data.int8)) {
+      |                          ^~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:205:13: error: 'kTfLiteOk' was not declared in this scope
+  205 |         if (kTfLiteOk != interpreter->Invoke()) {
+      |             ^~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:205:39: error: 'class tflite::MicroInterpreter' has no member named 'Invoke'
+  205 |         if (kTfLiteOk != interpreter->Invoke()) {
+      |                                       ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc: In function 'void run_inference(void*)':
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:303:7: error: 'kTfLiteOk' was not declared in this scope
+  303 |   if (kTfLiteOk != interpreter->Invoke()) {
+      |       ^~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:303:33: error: 'class tflite::MicroInterpreter' has no member named 'Invoke'
+  303 |   if (kTfLiteOk != interpreter->Invoke()) {
+      |                                 ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:339:59: error: 'TfLiteTensor' {aka 'struct TfLiteTensor'} has no member named 'params'
+  339 |   float un_dedo_score_f = (int8_t_un_dedo_score - output->params.zero_point) * output->params.scale;
+      |                                                           ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:339:88: error: 'TfLiteTensor' {aka 'struct TfLiteTensor'} has no member named 'params'
+  339 |   float un_dedo_score_f = (int8_t_un_dedo_score - output->params.zero_point) * output->params.scale;
+      |                                                                                        ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:340:53: error: 'TfLiteTensor' {aka 'struct TfLiteTensor'} has no member named 'params'
+  340 |   float rock_score_f = (int8_t_rock_score - output->params.zero_point) * output->params.scale;
+      |                                                     ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:340:82: error: 'TfLiteTensor' {aka 'struct TfLiteTensor'} has no member named 'params'
+  340 |   float rock_score_f = (int8_t_rock_score - output->params.zero_point) * output->params.scale;
+      |                                                                                  ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:341:65: error: 'TfLiteTensor' {aka 'struct TfLiteTensor'} has no member named 'params'
+  341 |   float tres_dedos_score_f = (int8_t_tres_dedos_score - output->params.zero_point) * output->params.scale;
+      |                                                                 ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:341:94: error: 'TfLiteTensor' {aka 'struct TfLiteTensor'} has no member named 'params'
+  341 |   float tres_dedos_score_f = (int8_t_tres_dedos_score - output->params.zero_point) * output->params.scale;
+      |                                                                                              ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:342:57: error: 'TfLiteTensor' {aka 'struct TfLiteTensor'} has no member named 'params'
+  342 |   float pulgar_score_f = (int8_t_pulgar_score - output->params.zero_point) * output->params.scale;
+      |                                                         ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:342:86: error: 'TfLiteTensor' {aka 'struct TfLiteTensor'} has no member named 'params'
+  342 |   float pulgar_score_f = (int8_t_pulgar_score - output->params.zero_point) * output->params.scale;
+      |                                                                                      ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:343:59: error: 'TfLiteTensor' {aka 'struct TfLiteTensor'} has no member named 'params'
+  343 |   float abierta_score_f = (int8_t_abierta_score - output->params.zero_point) * output->params.scale;
+      |                                                           ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:343:88: error: 'TfLiteTensor' {aka 'struct TfLiteTensor'} has no member named 'params'
+  343 |   float abierta_score_f = (int8_t_abierta_score - output->params.zero_point) * output->params.scale;
+      |                                                                                        ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:344:59: error: 'TfLiteTensor' {aka 'struct TfLiteTensor'} has no member named 'params'
+  344 |   float cerrado_score_f = (int8_t_cerrado_score - output->params.zero_point) * output->params.scale;
+      |                                                           ^~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:344:88: error: 'TfLiteTensor' {aka 'struct TfLiteTensor'} has no member named 'params'
+  344 |   float cerrado_score_f = (int8_t_cerrado_score - output->params.zero_point) * output->params.scale;
+      |                                                                                        ^~~~~~
+ninja: build stopped: subcommand failed.

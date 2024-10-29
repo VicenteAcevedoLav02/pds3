@@ -1,0 +1,5 @@
+[1/4] cd /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/esp-idf/esptool_py && /home/viciac/esp/idf-tools/python_env/idf5.4_py3.10_env/bin/python /home/viciac/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/partition_table/partition-table.bin /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/person_detection.bin
+person_detection.bin binary size 0x64a70 bytes. Smallest app partition is 0x180000 bytes. 0x11b590 bytes (74%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader/esp-idf/esptool_py && /home/viciac/esp/idf-tools/python_env/idf5.4_py3.10_env/bin/python /home/viciac/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader/bootloader.bin
+Bootloader binary size 0x6c00 bytes. 0x400 bytes (4%) free.

@@ -1,0 +1,55 @@
+CMake Warning at /home/viciac/esp/esp-idf/tools/cmake/git_submodules.cmake:52 (message):
+  Git submodule components/bt/controller/lib_esp32c3_family is out of date.
+  Run the following command to fix: git submodule update --init --recursive
+Call Stack (most recent call first):
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:109 (git_submodule_check)
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:272 (__build_get_idf_git_revision)
+  /home/viciac/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)
+  /home/viciac/esp/esp-idf/tools/cmake/project.cmake:29 (include)
+  CMakeLists.txt:6 (include)
+
+
+CMake Warning at /home/viciac/esp/esp-idf/tools/cmake/git_submodules.cmake:52 (message):
+  Git submodule components/bt/esp_ble_mesh/lib/lib is out of date.  Run the
+  following command to fix: git submodule update --init --recursive
+Call Stack (most recent call first):
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:109 (git_submodule_check)
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:272 (__build_get_idf_git_revision)
+  /home/viciac/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)
+  /home/viciac/esp/esp-idf/tools/cmake/project.cmake:29 (include)
+  CMakeLists.txt:6 (include)
+
+
+CMake Warning at /home/viciac/esp/esp-idf/tools/cmake/git_submodules.cmake:52 (message):
+  Git submodule components/bt/host/nimble/nimble is out of date.  Run the
+  following command to fix: git submodule update --init --recursive
+Call Stack (most recent call first):
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:109 (git_submodule_check)
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:272 (__build_get_idf_git_revision)
+  /home/viciac/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)
+  /home/viciac/esp/esp-idf/tools/cmake/project.cmake:29 (include)
+  CMakeLists.txt:6 (include)
+
+
+CMake Warning at /home/viciac/esp/esp-idf/tools/cmake/git_submodules.cmake:52 (message):
+  Git submodule components/esp_wifi/lib is out of date.  Run the following
+  command to fix: git submodule update --init --recursive
+Call Stack (most recent call first):
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:109 (git_submodule_check)
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:272 (__build_get_idf_git_revision)
+  /home/viciac/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)
+  /home/viciac/esp/esp-idf/tools/cmake/project.cmake:29 (include)
+  CMakeLists.txt:6 (include)
+
+
+CMake Error at /home/viciac/esp/esp-idf/tools/cmake/build.cmake:318 (message):
+  Failed to resolve component 'tensorflow' required by component 'main':
+  unknown name.
+Call Stack (most recent call first):
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:367 (__build_resolve_and_add_req)
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:664 (__build_expand_requirements)
+  /home/viciac/esp/esp-idf/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:7 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

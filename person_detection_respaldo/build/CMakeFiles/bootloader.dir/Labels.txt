@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/CMakeFiles/bootloader
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/CMakeFiles/bootloader.rule
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/CMakeFiles/bootloader-complete.rule
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

@@ -1,0 +1,155 @@
+[0/1] Re-running CMake...
+-- Component directory /home/viciac/esp/esp-idf/components/tensorflow does not contain a CMakeLists.txt file. No component will be added
+-- Building ESP-IDF components for target esp32
+NOTICE: Skipping optional dependency: espressif/esp32_s3_eye
+NOTICE: Skipping optional dependency: espressif/esp32_s3_korvo_2
+NOTICE: Skipping optional dependency: espressif/esp32_s2_kaluga_kit
+NOTICE: Skipping optional dependency: espressif/esp32_s3_eye
+NOTICE: Skipping optional dependency: espressif/esp32_s3_korvo_2
+NOTICE: Skipping optional dependency: espressif/esp32_s2_kaluga_kit
+Using component placed at /home/viciac/esp/esp-idf/esp-tflite-micro for dependency "espressif/esp-tflite-micro", specified in /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/idf_component.yml
+NOTICE: Skipping optional dependency: espressif/esp32_s3_eye
+NOTICE: Skipping optional dependency: espressif/esp32_s3_korvo_2
+NOTICE: Skipping optional dependency: espressif/esp32_s2_kaluga_kit
+Processing 3 dependencies:
+[1/3] espressif/esp-nn (1.1.0)
+[2/3] espressif/esp-tflite-micro (*) (/home/viciac/esp/esp-idf/esp-tflite-micro)
+[3/3] idf (5.4.0)
+NOTICE: Skipping optional dependency: espressif/esp32_s3_eye
+NOTICE: Skipping optional dependency: espressif/esp32_s3_korvo_2
+NOTICE: Skipping optional dependency: espressif/esp32_s2_kaluga_kit
+-- Project sdkconfig file /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/sdkconfig
+Loading defaults file /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/sdkconfig.defaults...
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/sdkconfig.defaults:16 CONFIG_FLASHMODE_QIO was replaced with CONFIG_ESPTOOLPY_FLASHMODE_QIO 
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/sdkconfig.defaults:26 CONFIG_MONITOR_BAUD was replaced with CONFIG_ESPTOOLPY_MONITOR_BAUD 
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/sdkconfig.defaults:39 CONFIG_ESP32_DEFAULT_CPU_FREQ_240 was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240 
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/sdkconfig.defaults:40 CONFIG_ESP32_DEFAULT_CPU_FREQ_MHZ was replaced with CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ 
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/sdkconfig.defaults:42 CONFIG_ESP32_SPIRAM_SUPPORT was replaced with CONFIG_SPIRAM 
+/tmp/kconfgen_tmpkq_6wr8x:32 line was updated to CONFIG_ENABLE_TEST_PATTERN=n
+/tmp/kconfgen_tmpkq_6wr8x:34 line was updated to CONFIG_OV7725_SUPPORT=n
+/tmp/kconfgen_tmpkq_6wr8x:49 line was updated to CONFIG_SPIRAM_USE_MALLOC=n
+warning: unknown kconfig symbol 'ESPTOOLPY_FLASHSIZE_DETECT' assigned to 'y' in /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/sdkconfig.defaults
+warning: unknown kconfig symbol 'MONITOR_BAUD_115200B' assigned to 'y' in /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/sdkconfig.defaults
+warning: unknown kconfig symbol 'MONITOR_BAUD_OTHER_VAL' assigned to '115200' in /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/sdkconfig.defaults
+warning: unknown kconfig symbol 'ENABLE_TEST_PATTERN' assigned to 'n' in /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/sdkconfig.defaults
+warning: unknown kconfig symbol 'SPIRAM_SIZE' assigned to '-1' in /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/sdkconfig.defaults
+warning: unknown kconfig symbol 'RTCIO_SUPPORT_RTC_GPIO_DESC' assigned to 'y' in /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/sdkconfig.defaults
+-- Compiler supported targets: xtensa-esp-elf
+-- App "person_detection" version: v1.3.1-14-g6bcc0f4-dirty
+-- Adding linker script /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/viciac/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/viciac/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/viciac/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/viciac/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/viciac/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/viciac/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tflite-micro esp-tls esp32-camera esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump espressif__esp-nn esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread rt sdmmc soc spi_flash spiffs static_images tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/viciac/esp/esp-idf/components/app_trace /home/viciac/esp/esp-idf/components/app_update /home/viciac/esp/esp-idf/components/bootloader /home/viciac/esp/esp-idf/components/bootloader_support /home/viciac/esp/esp-idf/components/bt /home/viciac/esp/esp-idf/components/cmock /home/viciac/esp/esp-idf/components/console /home/viciac/esp/esp-idf/components/cxx /home/viciac/esp/esp-idf/components/driver /home/viciac/esp/esp-idf/components/efuse /home/viciac/esp/esp-idf/esp-tflite-micro /home/viciac/esp/esp-idf/components/esp-tls /home/viciac/esp/esp-idf/components/esp32-camera /home/viciac/esp/esp-idf/components/esp_adc /home/viciac/esp/esp-idf/components/esp_app_format /home/viciac/esp/esp-idf/components/esp_bootloader_format /home/viciac/esp/esp-idf/components/esp_coex /home/viciac/esp/esp-idf/components/esp_common /home/viciac/esp/esp-idf/components/esp_driver_ana_cmpr /home/viciac/esp/esp-idf/components/esp_driver_cam /home/viciac/esp/esp-idf/components/esp_driver_dac /home/viciac/esp/esp-idf/components/esp_driver_gpio /home/viciac/esp/esp-idf/components/esp_driver_gptimer /home/viciac/esp/esp-idf/components/esp_driver_i2c /home/viciac/esp/esp-idf/components/esp_driver_i2s /home/viciac/esp/esp-idf/components/esp_driver_isp /home/viciac/esp/esp-idf/components/esp_driver_jpeg /home/viciac/esp/esp-idf/components/esp_driver_ledc /home/viciac/esp/esp-idf/components/esp_driver_mcpwm /home/viciac/esp/esp-idf/components/esp_driver_parlio /home/viciac/esp/esp-idf/components/esp_driver_pcnt /home/viciac/esp/esp-idf/components/esp_driver_ppa /home/viciac/esp/esp-idf/components/esp_driver_rmt /home/viciac/esp/esp-idf/components/esp_driver_sdio /home/viciac/esp/esp-idf/components/esp_driver_sdm /home/viciac/esp/esp-idf/components/esp_driver_sdmmc /home/viciac/esp/esp-idf/components/esp_driver_sdspi /home/viciac/esp/esp-idf/components/esp_driver_spi /home/viciac/esp/esp-idf/components/esp_driver_touch_sens /home/viciac/esp/esp-idf/components/esp_driver_tsens /home/viciac/esp/esp-idf/components/esp_driver_uart /home/viciac/esp/esp-idf/components/esp_driver_usb_serial_jtag /home/viciac/esp/esp-idf/components/esp_eth /home/viciac/esp/esp-idf/components/esp_event /home/viciac/esp/esp-idf/components/esp_gdbstub /home/viciac/esp/esp-idf/components/esp_hid /home/viciac/esp/esp-idf/components/esp_http_client /home/viciac/esp/esp-idf/components/esp_http_server /home/viciac/esp/esp-idf/components/esp_https_ota /home/viciac/esp/esp-idf/components/esp_https_server /home/viciac/esp/esp-idf/components/esp_hw_support /home/viciac/esp/esp-idf/components/esp_lcd /home/viciac/esp/esp-idf/components/esp_local_ctrl /home/viciac/esp/esp-idf/components/esp_mm /home/viciac/esp/esp-idf/components/esp_netif /home/viciac/esp/esp-idf/components/esp_netif_stack /home/viciac/esp/esp-idf/components/esp_partition /home/viciac/esp/esp-idf/components/esp_phy /home/viciac/esp/esp-idf/components/esp_pm /home/viciac/esp/esp-idf/components/esp_psram /home/viciac/esp/esp-idf/components/esp_ringbuf /home/viciac/esp/esp-idf/components/esp_rom /home/viciac/esp/esp-idf/components/esp_security /home/viciac/esp/esp-idf/components/esp_system /home/viciac/esp/esp-idf/components/esp_timer /home/viciac/esp/esp-idf/components/esp_vfs_console /home/viciac/esp/esp-idf/components/esp_wifi /home/viciac/esp/esp-idf/components/espcoredump /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/managed_components/espressif__esp-nn /home/viciac/esp/esp-idf/components/esptool_py /home/viciac/esp/esp-idf/components/fatfs /home/viciac/esp/esp-idf/components/freertos /home/viciac/esp/esp-idf/components/hal /home/viciac/esp/esp-idf/components/heap /home/viciac/esp/esp-idf/components/http_parser /home/viciac/esp/esp-idf/components/idf_test /home/viciac/esp/esp-idf/components/ieee802154 /home/viciac/esp/esp-idf/components/json /home/viciac/esp/esp-idf/components/log /home/viciac/esp/esp-idf/components/lwip /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main /home/viciac/esp/esp-idf/components/mbedtls /home/viciac/esp/esp-idf/components/mqtt /home/viciac/esp/esp-idf/components/newlib /home/viciac/esp/esp-idf/components/nvs_flash /home/viciac/esp/esp-idf/components/nvs_sec_provider /home/viciac/esp/esp-idf/components/openthread /home/viciac/esp/esp-idf/components/partition_table /home/viciac/esp/esp-idf/components/perfmon /home/viciac/esp/esp-idf/components/protobuf-c /home/viciac/esp/esp-idf/components/protocomm /home/viciac/esp/esp-idf/components/pthread /home/viciac/esp/esp-idf/components/rt /home/viciac/esp/esp-idf/components/sdmmc /home/viciac/esp/esp-idf/components/soc /home/viciac/esp/esp-idf/components/spi_flash /home/viciac/esp/esp-idf/components/spiffs /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/static_images /home/viciac/esp/esp-idf/components/tcp_transport /home/viciac/esp/esp-idf/components/ulp /home/viciac/esp/esp-idf/components/unity /home/viciac/esp/esp-idf/components/usb /home/viciac/esp/esp-idf/components/vfs /home/viciac/esp/esp-idf/components/wear_levelling /home/viciac/esp/esp-idf/components/wifi_provisioning /home/viciac/esp/esp-idf/components/wpa_supplicant /home/viciac/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build
+[1/9] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Component directory /home/viciac/esp/esp-idf/components/tensorflow does not contain a CMakeLists.txt file. No component will be added
+CMake Warning at /home/viciac/esp/esp-idf/tools/cmake/git_submodules.cmake:52 (message):
+  Git submodule components/bt/controller/lib_esp32c3_family is out of date.
+  Run the following command to fix: git submodule update --init --recursive
+Call Stack (most recent call first):
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:109 (git_submodule_check)
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:272 (__build_get_idf_git_revision)
+  /home/viciac/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)
+  /home/viciac/esp/esp-idf/tools/cmake/project.cmake:29 (include)
+  CMakeLists.txt:61 (include)
+
+
+CMake Warning at /home/viciac/esp/esp-idf/tools/cmake/git_submodules.cmake:52 (message):
+  Git submodule components/bt/esp_ble_mesh/lib/lib is out of date.  Run the
+  following command to fix: git submodule update --init --recursive
+Call Stack (most recent call first):
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:109 (git_submodule_check)
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:272 (__build_get_idf_git_revision)
+  /home/viciac/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)
+  /home/viciac/esp/esp-idf/tools/cmake/project.cmake:29 (include)
+  CMakeLists.txt:61 (include)
+
+
+CMake Warning at /home/viciac/esp/esp-idf/tools/cmake/git_submodules.cmake:52 (message):
+  Git submodule components/bt/host/nimble/nimble is out of date.  Run the
+  following command to fix: git submodule update --init --recursive
+Call Stack (most recent call first):
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:109 (git_submodule_check)
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:272 (__build_get_idf_git_revision)
+  /home/viciac/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)
+  /home/viciac/esp/esp-idf/tools/cmake/project.cmake:29 (include)
+  CMakeLists.txt:61 (include)
+
+
+CMake Warning at /home/viciac/esp/esp-idf/tools/cmake/git_submodules.cmake:52 (message):
+  Git submodule components/esp_wifi/lib is out of date.  Run the following
+  command to fix: git submodule update --init --recursive
+Call Stack (most recent call first):
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:109 (git_submodule_check)
+  /home/viciac/esp/esp-idf/tools/cmake/build.cmake:272 (__build_get_idf_git_revision)
+  /home/viciac/esp/esp-idf/tools/cmake/idf.cmake:53 (__build_init)
+  /home/viciac/esp/esp-idf/tools/cmake/project.cmake:29 (include)
+  CMakeLists.txt:61 (include)
+
+
+-- Building ESP-IDF components for target esp32
+Processing 1 dependencies:
+[1/1] idf (5.4.0)
+-- Project sdkconfig file /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Adding linker script /home/viciac/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script /home/viciac/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/viciac/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/viciac/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/viciac/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/viciac/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script /home/viciac/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_security esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /home/viciac/esp/esp-idf/components/bootloader /home/viciac/esp/esp-idf/components/bootloader_support /home/viciac/esp/esp-idf/components/efuse /home/viciac/esp/esp-idf/components/esp_app_format /home/viciac/esp/esp-idf/components/esp_bootloader_format /home/viciac/esp/esp-idf/components/esp_common /home/viciac/esp/esp-idf/components/esp_hw_support /home/viciac/esp/esp-idf/components/esp_rom /home/viciac/esp/esp-idf/components/esp_security /home/viciac/esp/esp-idf/components/esp_system /home/viciac/esp/esp-idf/components/esptool_py /home/viciac/esp/esp-idf/components/freertos /home/viciac/esp/esp-idf/components/hal /home/viciac/esp/esp-idf/components/log /home/viciac/esp/esp-idf/components/bootloader/subproject/main /home/viciac/esp/esp-idf/components/bootloader/subproject/components/micro-ecc /home/viciac/esp/esp-idf/components/newlib /home/viciac/esp/esp-idf/components/partition_table /home/viciac/esp/esp-idf/components/soc /home/viciac/esp/esp-idf/components/spi_flash /home/viciac/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader
+[1/1] cd /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader/esp-idf/esptool_py && /home/viciac/esp/idf-tools/python_env/idf5.4_py3.10_env/bin/python /home/viciac/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader/bootloader.bin
+Bootloader binary size 0x6c00 bytes. 0x400 bytes (4%) free.
+[2/7] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main_functions.cc.obj
+In file included from /home/viciac/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:63,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:33:
+/home/viciac/esp/esp-idf/components/freertos/config/include/freertos/FreeRTOSConfig.h:92:9: warning: "configTICK_RATE_HZ" redefined
+   92 | #define configTICK_RATE_HZ                           CONFIG_FREERTOS_HZ
+      |         ^~~~~~~~~~~~~~~~~~
+/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:22:9: note: this is the location of the previous definition
+   22 | #define configTICK_RATE_HZ 1000
+      |         ^~~~~~~~~~~~~~~~~~
+In file included from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/tflite_bridge/flatbuffer_conversions_bridge.h:19,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_allocator.h:26,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/micro/micro_interpreter.h:26,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:28:
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h: In member function 'T* tflite::BuiltinDataAllocator::AllocatePOD()':
+/home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/api/flatbuffer_conversions.h:47:24: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use 'is_standard_layout && is_trivial' instead [-Wdeprecated-declarations]
+   47 |     static_assert(std::is_pod<T>::value, "Builtin data structure must be POD.");
+      |                        ^~~~~~
+In file included from /home/viciac/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/bits/stl_pair.h:60,
+                 from /home/viciac/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/utility:69,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/core/c/common.h:1476,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/tensorflow/lite/c/common.h:31,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/detection_responder.h:22,
+                 from /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/main/main_functions.cc:24:
+/home/viciac/esp/idf-tools/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/type_traits:890:5: note: declared here
+  890 |     is_pod
+      |     ^~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable person_detection.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/person_detection.bin
+[7/7] cd /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/esp-idf/esptool_py && /home/viciac/esp/idf-tools/python_env/idf5.4_py3.10_env/bin/python /home/viciac/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/partition_table/partition-table.bin /home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/person_detection.bin
+person_detection.bin binary size 0x632b0 bytes. Smallest app partition is 0x180000 bytes. 0x11cd50 bytes (74%) free.

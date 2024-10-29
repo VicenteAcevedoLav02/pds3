@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/home/viciac/esp/esp-idf/esp-tflite-micro/examples/person_detection_respaldo/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}
